@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nakeem Carty — UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="site-header header-visible" id="siteHeader">
+    <span class="site-brand">Nakeem Carty</span>
+    <nav class="site-nav" id="siteNav">
+      <div class="nav-highlight" id="navHighlight"></div>
+      <button class="tab-btn active" data-tab="projects" onclick="switchTab(this)">Projects</button>
+      <button class="tab-btn" data-tab="about" onclick="switchTab(this)">About</button>
+      <button class="tab-btn" data-tab="resume" onclick="switchTab(this)">Resume</button>
+    </nav>
+  </header>
+
+  <!-- ══════════ PROJECTS ══════════ -->
+  <div class="panel active" id="tab-projects">
+    <div class="projects-grid">
+
+      <!-- Seller Start -->
+      <div class="proj-card" onclick="openCase('seller-start')">
+        <div class="proj-thumb seller-thumb">
+          <div class="seller-mock">
+            <div class="seller-core">
+              <div class="seller-chip"><div class="seller-chip-label">COMP</div><div class="seller-chip-val">92%</div></div>
+              <div class="seller-chip"><div class="seller-chip-label">CALENDAR</div><div class="seller-chip-val">3</div></div>
+              <div class="seller-chip"><div class="seller-chip-label">ALERTS</div><div class="seller-chip-val">2</div></div>
+            </div>
+            <div class="seller-label">MARKETPLACE</div>
+            <div class="seller-grid">
+              <div class="seller-tile"><div class="seller-tile-title">Account Health</div><div class="seller-tile-line"></div></div>
+              <div class="seller-tile"><div class="seller-tile-title">RFP Library</div><div class="seller-tile-line"></div></div>
+              <div class="seller-tile"><div class="seller-tile-title">Utilization</div><div class="seller-tile-line"></div></div>
+              <div class="seller-tile"><div class="seller-tile-title">SPIFF / QAP</div><div class="seller-tile-line"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-meta">
+          <span class="proj-desc">Seller Start</span>
+          <span class="proj-tag">Web App</span>
+        </div>
+      </div>
+
+      <!-- Teaming Agreement -->
+      <div class="proj-card" onclick="openCase('teaming-agreement')">
+        <div class="proj-thumb teaming-thumb">
+          <div class="teaming-mock">
+            <div class="teaming-steps">
+              <div class="teaming-step active">1</div><div class="teaming-step-line"></div>
+              <div class="teaming-step active">2</div><div class="teaming-step-line"></div>
+              <div class="teaming-step">3</div><div class="teaming-step-line"></div>
+              <div class="teaming-step">4</div>
+            </div>
+            <div class="teaming-table">
+              <div class="teaming-row"><span class="teaming-row-role">Disney US</span><span class="teaming-row-resp">Lead account owner</span></div>
+              <div class="teaming-row"><span class="teaming-row-role">Disney Europe</span><span class="teaming-row-resp">Regional support</span></div>
+              <div class="teaming-row"><span class="teaming-row-role">Disney Japan</span><span class="teaming-row-resp">Regional support</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-meta">
+          <span class="proj-desc">Teaming Agreement</span>
+          <span class="proj-tag">Enterprise Tool</span>
+        </div>
+      </div>
+
+      <!-- Consumption Plan -->
+      <div class="proj-card" onclick="openCase('consumption-plan')">
+        <div class="proj-thumb consumption-thumb">
+          <div class="consumption-mock">
+            <div class="consumption-kpis">
+              <div class="consumption-kpi"><div class="consumption-kpi-label">AGENTFORCE</div><div class="consumption-kpi-val">68%</div></div>
+              <div class="consumption-kpi"><div class="consumption-kpi-label">DATA CLOUD</div><div class="consumption-kpi-val">41%</div></div>
+              <div class="consumption-kpi"><div class="consumption-kpi-label">RENEWAL</div><div class="consumption-kpi-val">Q2</div></div>
+            </div>
+            <div class="consumption-label">USAGE OVER TIME</div>
+            <div class="consumption-bars">
+              <div class="consumption-bar" style="height:12px"></div>
+              <div class="consumption-bar" style="height:18px"></div>
+              <div class="consumption-bar" style="height:14px"></div>
+              <div class="consumption-bar hi" style="height:26px"></div>
+              <div class="consumption-bar" style="height:20px"></div>
+              <div class="consumption-bar" style="height:16px"></div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-meta">
+          <span class="proj-desc">Consumption Plan</span>
+          <span class="proj-tag">Dashboard</span>
+        </div>
+      </div>
+
+      <!-- Activity Editor -->
+      <div class="proj-card" onclick="openCase('activity-editor')">
+        <div class="proj-thumb activity-thumb">
+          <div class="activity-mock">
+            <div class="activity-slack">
+              <div class="activity-avatar"></div>
+              <div class="activity-bubble"><b>Client Sync</b> — 45 min<br>Logged as Org62 Activity ✓</div>
+            </div>
+            <div class="activity-flow">
+              <div class="activity-chip"><span class="activity-chip-dot" style="background:#4285F4"></span>Google Calendar</div>
+              <span class="activity-arrow">→</span>
+              <div class="activity-chip"><span class="activity-chip-dot" style="background:#1a2340"></span>Org62 Activity</div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-meta">
+          <span class="proj-desc">Activity Editor</span>
+          <span class="proj-tag">Slack App</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer inside projects tab -->
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <div class="footer-brand-top">
+          <div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div>
+          <h3 class="footer-name">Nakeem Carty</h3>
+        </div>
+        <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
+        <span class="footer-credit">© 2026 by Nakeem Carty</span>
+      </div>
+      <div>
+        <div class="footer-col-title">Links</div>
+        <ul class="footer-links">
+          <li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li>
+          <li><a href="#" onclick="switchTabByName('about');return false;">About</a></li>
+          <li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links">
+          <li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li>
+        </ul>
+        <div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ══════════ EXPERIMENTS ══════════ -->
+  <div class="panel" id="tab-experiments">
+    <div class="projects-grid" style="grid-template-columns:repeat(3,1fr);gap:10px;">
+      <div class="proj-card">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#ffd4e8,#c8b4ff);aspect-ratio:4/3;"></div>
+        <div class="proj-meta"><span class="proj-desc">Colour Theory Explorer</span><span class="proj-tag">2025</span></div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#b4e8d4,#80c8b0);aspect-ratio:4/3;"></div>
+        <div class="proj-meta"><span class="proj-desc">Grid System Generator</span><span class="proj-tag">2025</span></div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#ffe8b4,#ffc080);aspect-ratio:4/3;"></div>
+        <div class="proj-meta"><span class="proj-desc">Typeface Pairing Tool</span><span class="proj-tag">2024</span></div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#d4e8ff,#a0c4ff);aspect-ratio:4/3;"></div>
+        <div class="proj-meta"><span class="proj-desc">Component Sandbox</span><span class="proj-tag">2024</span></div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#ffd4b4,#ff9a70);aspect-ratio:4/3;"></div>
+        <div class="proj-meta"><span class="proj-desc">Generative Poster Series</span><span class="proj-tag">2024</span></div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#e8d4ff,#c080ff);aspect-ratio:4/3;"></div>
+        <div class="proj-meta"><span class="proj-desc">Journey Map Canvas</span><span class="proj-tag">2023</span></div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <div class="footer-brand-top"><div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div><h3 class="footer-name">Nakeem Carty</h3></div>
+        <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
+        <span class="footer-credit">© 2026 by Nakeem Carty</span>
+      </div>
+      <div><div class="footer-col-title">Links</div><ul class="footer-links"><li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li><li><a href="#" onclick="switchTabByName('about');return false;">About</a></li><li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li></ul></div>
+      <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li></ul><div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div>
+    </footer>
+  </div>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <div class="panel" id="tab-about">
+
+    <!-- Bio -->
+    <div class="about-bio">
+      <div class="about-photo-wrap">
+        <div class="about-photo"><img src="img/profile-picture.jpeg" alt="Nakeem Carty"></div>
+      </div>
+      <div class="about-text">
+        <div class="about-hi">Hi, I'm Nakeem 👋🏽</div>
+        <div class="about-headline">Product Designer focused<br>on clarity and real-world use</div>
+        <div class="about-block">
+          <p class="about-para">Curious by nature, builder by practice. I love diving headfirst into unfamiliar tools and complex problems, figuring out what makes them tick and turning ambiguity into momentum.</p>
+        </div>
+        <div class="about-block">
+          <p class="about-para">Born and raised in sunny St Croix (USVI), I moved to England in 2012 to pursue Digital Design. University was where my general curiosity sharpened into a focused obsession with UX/UI design.</p>
+        </div>
+        <div class="about-block">
+          <p class="about-para">Since then, I have refined my skills through real world impact, growing from targeted internships into a full time design role at Salesforce where I build intuitive, user centred digital products.</p>
+        </div>
+        <div class="about-cta-row">
+          <a class="btn-outline btn-outline-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>Connect on LinkedIn</a>
+          <a class="btn-outline btn-outline-icon btn-outline-primary" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>Download Resume</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interests -->
+    <div class="interests-wrap">
+      <div class="s-heading">
+        <span class="s-title">What I'm into</span>
+        <span class="s-title-muted"> right now</span>
+      </div>
+      <div class="interests-chips">
+        <span class="interest-chip">Running</span>
+        <span class="interest-chip">Films & TV</span>
+        <span class="interest-chip">Concerts & Festivals</span>
+        <span class="interest-chip">Travelling</span>
+        <span class="interest-chip">Photography</span>
+        <span class="interest-chip">Journalling</span>
+        <span class="interest-chip">Everything Matcha</span>
+        <span class="interest-chip">Football (Soccer)</span>
+        <span class="interest-chip">Cooking</span>
+        <span class="interest-chip">Dining Out</span>
+        <span class="interest-chip">Anime</span>
+      </div>
+    </div>
+
+    <!-- Values -->
+    <!-- Feedback -->
+    <div class="feedback-wrap">
+      <div class="s-heading">
+        <span class="s-title">Kind words</span>
+        <span class="s-title-muted"> from people I've worked with</span>
+      </div>
+      <div class="feedback-grid">
+        <div class="feedback-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="case-quote-text">Nakeem was great to work with, he quickly jumped in to support the wireframes for the Consumption Plan and even recorded a demo that was later used for enablement. Despite the quick turnaround, he delivered high-quality work, and the stakeholder was very happy with the outcome. I'd definitely work with him again.</div>
+          <div class="quote-divider"></div>
+          <div class="quote-footer">
+            <div class="quote-avatar">SY</div>
+            <div class="quote-header">
+              <div class="quote-name">Sofia Young</div>
+              <div class="quote-role">Project Manager • Salesforce</div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="case-quote-text">Nakeem was super easy to work with. He asked excellent questions and provided great insight and input into the overall strategy we were pursuing.</div>
+          <div class="quote-divider"></div>
+          <div class="quote-footer">
+            <div class="quote-avatar">AK</div>
+            <div class="quote-header">
+              <div class="quote-name">Anna Krevets</div>
+              <div class="quote-role">Product Owner • Salesforce</div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="case-quote-text">Great communicator. Asked good questions.</div>
+          <div class="quote-divider"></div>
+          <div class="quote-footer">
+            <div class="quote-avatar">NS</div>
+            <div class="quote-header">
+              <div class="quote-name">Nagarjun Singaram</div>
+              <div class="quote-role">Business Analyst • Salesforce</div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="case-quote-text">The prompt response and more detailed designs.</div>
+          <div class="quote-divider"></div>
+          <div class="quote-footer">
+            <div class="quote-avatar">MV</div>
+            <div class="quote-header">
+              <div class="quote-name">Manoj Varma Vadapalli</div>
+              <div class="quote-role">Software Engineer • Salesforce</div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="case-quote-text">What I appreciated most about Nakeem's work was his exceptional creativity in crafting innovative prototypes and UX designs specifically for our LWC components in the teaming agreement project. He demonstrated deep expertise with SLDS, ensuring every interface adhered perfectly to Salesforce's Lightning Design System.</div>
+          <div class="quote-divider"></div>
+          <div class="quote-footer">
+            <div class="quote-avatar">SD</div>
+            <div class="quote-header">
+              <div class="quote-name">Sankeerth Dharmakkola</div>
+              <div class="quote-role">Software Engineer • Salesforce</div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="case-quote-text">Nakeem listens to the requirements carefully, knows the platform and trends very well, and comes up with the best options in a timely manner. He's pleasant to work with.</div>
+          <div class="quote-divider"></div>
+          <div class="quote-footer">
+            <div class="quote-avatar">NM</div>
+            <div class="quote-header">
+              <div class="quote-name">Negar Masarrat</div>
+              <div class="quote-role">Product Manager • Salesforce</div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="case-quote-text">Nakeem has been very helpful with explaining the details of the designs, suggesting great ideas on how the design would be great for the user.</div>
+          <div class="quote-divider"></div>
+          <div class="quote-footer">
+            <div class="quote-avatar">MC</div>
+            <div class="quote-header">
+              <div class="quote-name">Madhuri Cadium</div>
+              <div class="quote-role">Software Engineer • Salesforce</div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="case-quote-text">Quickness in understanding the ask, creativity in design while still meeting all business requirements, turnaround time, and collaboration in general.</div>
+          <div class="quote-divider"></div>
+          <div class="quote-footer">
+            <div class="quote-avatar">VS</div>
+            <div class="quote-header">
+              <div class="quote-name">Vanessa Siegel</div>
+              <div class="quote-role">Project Manager • Salesforce</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <div class="footer-brand-top"><div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div><h3 class="footer-name">Nakeem Carty</h3></div>
+        <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
+        <span class="footer-credit">© 2026 by Nakeem Carty</span>
+      </div>
+      <div><div class="footer-col-title">Links</div><ul class="footer-links"><li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li><li><a href="#" onclick="switchTabByName('about');return false;">About</a></li><li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li></ul></div>
+      <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li></ul><div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div>
+    </footer>
+  </div>
+
+  <!-- ══════════ RESUME ══════════ -->
+  <div class="panel" id="tab-resume">
+    <div class="resume-wrap">
+
+      <!-- Experience -->
+      <div class="r-section">
+        <h2 class="r-section-title">Work Experience</h2>
+        <div style="height:14px"></div>
+        <div class="work-item">
+          <div class="work-icon work-icon-pad-sm" style="background:white"><img src="img/960px-Salesforce.com_logo.svg.webp" alt="Salesforce logo"></div>
+          <div class="work-body">
+            <div class="work-title">UX Designer <span class="work-title-org">at Salesforce</span></div>
+            <div class="work-meta">Feb 2022 – Current <span class="meta-sep">·</span> <span class="work-location">London, UK</span></div>
+            <div class="work-desc">Directed a usability research campaign across 15+ sales users, framing hypotheses and synthesising findings to inform Pipeline Generation roadmap decisions. Owned UI/UX for the Consumption Plan tool end to end, from problem framing through to a shipped, unified experience replacing a manual spreadsheet process. Ran a cross-functional workshop and rapidly prototyped a concept in Google AI Studio, using AI tooling to accelerate the path from idea to testable prototype. Delivered four components for the Q Branch design system and served as a go-to contact for peer designers on architecture and pattern selection. Led digitisation of the Teaming Agreement process for enterprise accounts including Disney, Amazon, and Google, working autonomously with stakeholders through to sign-off.</div>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-icon work-icon-pad-sm" style="background:white"><img src="img/960px-Salesforce.com_logo.svg.webp" alt="Salesforce logo"></div>
+          <div class="work-body">
+            <div class="work-title">Associate Digital Designer <span class="work-title-org">at Salesforce</span></div>
+            <div class="work-meta">May 2020 – Feb 2022 <span class="meta-sep">·</span> <span class="work-location">London, UK</span></div>
+            <div class="work-desc">Ran usability testing on prototypes to inform roadmap decisions, synthesising findings for the product team. First designer on the team to adopt Figma, establishing a structured design-to-engineering handoff process.</div>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-icon"><img src="img/id0BNCCx_U_1787412302910.jpeg" alt="NBCUniversal logo"></div>
+          <div class="work-body">
+            <div class="work-title">Digital Product Design Intern <span class="work-title-org">at NBCUniversal</span></div>
+            <div class="work-meta">Sep 2018 – Jan 2020 <span class="meta-sep">·</span> <span class="work-location">London, UK</span></div>
+            <div class="work-desc">Designed digital and social assets across three networks (Universal TV, Telemundo, CNBC) and prototyped an AR concept for employee engagement.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
+
+      <!-- Tools -->
+      <div class="r-section">
+        <h2 class="tools-heading">Tools <span>powering my work</span></h2>
+        <div class="tools-grid">
+          <div class="tool-row">
+            <div class="tool-icon" style="background:white"><img src="img/figma.svg" alt="Figma logo"></div>
+            <div><h3 class="tool-name">Figma &amp; FigJam</h3><div class="tool-desc">UI Design, Workshops</div></div>
+          </div>
+          <div class="tool-row">
+            <div class="tool-icon tool-icon-cover"><img src="img/claude.svg" alt="Claude Code logo"></div>
+            <div><h3 class="tool-name">Claude Code</h3><div class="tool-desc">Ideation, Prototyping</div></div>
+          </div>
+          <div class="tool-row">
+            <div class="tool-icon tool-icon-cover"><img src="img/adobe-illustrator.svg" alt="Adobe Illustrator logo"></div>
+            <div><h3 class="tool-name">Adobe Illustrator</h3><div class="tool-desc">Vector Illustration</div></div>
+          </div>
+          <div class="tool-row">
+            <div class="tool-icon tool-icon-cover"><img src="img/adobe-photoshop.svg" alt="Adobe Photoshop logo"></div>
+            <div><h3 class="tool-name">Adobe Photoshop</h3><div class="tool-desc">Image Editing</div></div>
+          </div>
+          <div class="tool-row">
+            <div class="tool-icon" style="background:white"><img src="img/google-workspace.svg" alt="Google logo"></div>
+            <div><h3 class="tool-name">Google Workspace</h3><div class="tool-desc">Docs And Slides</div></div>
+          </div>
+          <div class="tool-row">
+            <div class="tool-icon tool-icon-cover"><img src="img/google-ai-studio.webp" alt="Google AI Studio logo"></div>
+            <div><h3 class="tool-name">Google AI Studio &amp; Stitch</h3><div class="tool-desc">Rapid Prototyping</div></div>
+          </div>
+          <div class="tool-row">
+            <div class="tool-icon" style="background:#f0f0f0"><img src="img/gemini.svg" alt="Google Gemini logo"></div>
+            <div><h3 class="tool-name">Gemini &amp; NotebookLM</h3><div class="tool-desc">Research Synthesis</div></div>
+          </div>
+          <div class="tool-row">
+            <div class="tool-icon" style="background:white"><img src="img/usertesting.svg" alt="UserTesting logo"></div>
+            <div><h3 class="tool-name">UserTesting</h3><div class="tool-desc">Usability Testing</div></div>
+          </div>
+          <div class="tool-row">
+            <div class="tool-icon" style="background:white"><img src="img/slack.svg" alt="Slack logo"></div>
+            <div><h3 class="tool-name">Slack</h3><div class="tool-desc">Team Communication</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
+
+      <!-- Skills -->
+      <div class="r-section">
+        <h2 class="r-section-title">Skills</h2>
+        <div style="height:12px"></div>
+        <div class="skills-chips">
+          <span class="skill-chip">Wireframing &amp; Prototyping</span>
+          <span class="skill-chip">User Research</span>
+          <span class="skill-chip">Information Architecture</span>
+          <span class="skill-chip">Interaction Design</span>
+          <span class="skill-chip">Usability Testing</span>
+          <span class="skill-chip">Design Systems</span>
+          <span class="skill-chip">Stakeholder Management</span>
+          <span class="skill-chip">Design QA &amp; Process</span>
+        </div>
+      </div>
+
+      <div style="border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
+
+      <!-- Education -->
+      <div class="r-section">
+        <h2 class="r-section-title">Education</h2>
+        <div style="height:14px"></div>
+        <div class="work-item">
+          <div class="work-icon"><img src="img/Brunel-UoL-96dpi-650px.webp" alt="Brunel University London logo"></div>
+          <div class="work-body">
+            <h3 class="edu-degree">BSc (Hons) Digital Design <span class="edu-degree-org">at Brunel University London</span></h3>
+            <div class="edu-honours">Upper Second Class Honours (2:1)</div>
+            <div class="edu-meta">2014 – 2017</div>
+          </div>
+        </div>
+        <div class="work-item">
+          <div class="work-icon work-icon-pad-sm" style="background:white"><img src="img/UC_Colour_Logo_Blue_2026_166x135-web.png" alt="Uxbridge College logo"></div>
+          <div class="work-body">
+            <h3 class="edu-degree">BTEC Level 3 Ext. Diploma in IT <span class="edu-degree-org">at Uxbridge College</span></h3>
+            <div class="edu-honours">Distinction*Distinction*Distinction</div>
+            <div class="edu-meta">2012 – 2014</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <div class="footer-brand-top"><div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div><h3 class="footer-name">Nakeem Carty</h3></div>
+        <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
+        <span class="footer-credit">© 2026 by Nakeem Carty</span>
+      </div>
+      <div><div class="footer-col-title">Links</div><ul class="footer-links"><li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li><li><a href="#" onclick="switchTabByName('about');return false;">About</a></li><li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li></ul></div>
+      <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li></ul><div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div>
+    </footer>
+  </div>
+
+  <!-- ══════════ CASE STUDY: SELLER START ══════════ -->
+  <div class="panel" id="tab-case-seller-start">
+    <div class="case-study active">
+      <div class="case-layout">
+      <aside class="case-sidebar">
+        <button class="case-back-btn" onclick="switchTabByName('projects')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back
+        </button>
+        <nav class="case-toc">
+          <a href="#overview" class="case-toc-link">Overview</a>
+          <a href="#the-problem" class="case-toc-link">The Problem</a>
+          <a href="#my-role" class="case-toc-link">My Role</a>
+          <a href="#key-design-decisions" class="case-toc-link">Key Design Decisions</a>
+          <a href="#challenges" class="case-toc-link">Challenges</a>
+          <a href="#outcome-impact" class="case-toc-link">Outcome &amp; Impact</a>
+          <a href="#what-i-learned" class="case-toc-link">What I Learned</a>
+          <a href="#reference-material" class="case-toc-link">Reference Material</a>
+        </nav>
+      </aside>
+      <div class="case-content">
+
+      <!-- Breadcrumb -->
+      <div class="case-breadcrumb">
+        <a onclick="switchTabByName('projects')">Work</a>
+        <span class="case-breadcrumb-sep">·</span>
+        <span class="case-year">2026</span>
+      </div>
+
+      <h1 class="case-title">Redesigning the seller's daily starting point</h1>
+      <p class="case-intro">Seller Start set out to redesign the seller's daily "starting point" — replacing a fragmented experience spread across Slack, Salesforce, calendars, and dashboards like SPIFF and QAP with a single, unified Home experience.</p>
+
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-inner" style="background:linear-gradient(155deg, #c8d8f0 0%, #dcc8e8 55%, #f0d8b8 100%);">
+          <div class="case-hero-card">
+            <div class="cs-stat-row">
+              <div class="cs-stat"><div class="cs-stat-label">Segments mapped</div><div class="cs-stat-val">3</div></div>
+              <div class="cs-stat"><div class="cs-stat-label">Core signals</div><div class="cs-stat-val" style="font-size:15px;">Comp · Cal · Alerts</div></div>
+              <div class="cs-stat"><div class="cs-stat-label">Prototype path</div><div class="cs-stat-val" style="font-size:15px;">AI Studio</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meta -->
+      <div class="case-meta-row">
+        <div><div class="case-meta-label">Role</div><div class="case-meta-value">UI/UX Designer</div></div>
+        <div><div class="case-meta-label">Timeline</div><div class="case-meta-value">Feb 2026 – ongoing</div></div>
+        <div><div class="case-meta-label">Team</div><div class="case-meta-value">Solutions Workspace / GBGA</div></div>
+        <div><div class="case-meta-label">Tools</div><div class="case-meta-value">FigJam, Google AI Studio</div></div>
+      </div>
+
+      <div style="height:40px;border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
+
+      <!-- Overview -->
+      <div class="case-section" id="overview">
+        <div class="case-eyebrow">Overview</div>
+        <div class="case-s-title">One home, instead of four tools</div>
+        <p class="case-body">Seller Start set out to redesign the seller's daily "starting point" — replacing a fragmented experience spread across Slack, Salesforce, calendars, and dashboards like SPIFF and QAP with a single unified Home experience.</p>
+      </div>
+
+      <!-- The Problem -->
+      <div class="case-section" id="the-problem">
+        <div class="case-eyebrow">The Problem</div>
+        <div class="case-s-title">Information anxiety, with no daily digest</div>
+        <p class="case-body">Sellers were suffering from "information anxiety": critical data was siloed across too many tools, and there was no single sales-focused daily digest pulling together what mattered for that day. Success was defined as a unified narrative — compensation, alerts, calendar, account health, consumption/utilization risk flags, and an AI-powered RFP snippet library — all centralised, with a consistent experience regardless of where the seller started their day.</p>
+      </div>
+
+      <!-- My Role -->
+      <div class="case-section" id="my-role">
+        <div class="case-eyebrow">My Role</div>
+        <div class="case-s-title">Workshop-driven, AI-native process</div>
+        <ul class="case-list">
+          <li>Ran an initial FigJam workshop with a collaborator to map seller needs across personas: Major Accounts, Prime AEs, and Specialist AEs.</li>
+          <li>Instead of moving straight from FigJam into Figma, took the workshop output into Google AI Studio to build a working prototype directly.</li>
+          <li>Used the AI Studio prototype to gather early feedback, sharing an async walkthrough video plus a live link so stakeholders could try the design themselves rather than sit through a live sync.</li>
+          <li>Produced a low-fidelity mockup alongside a rapid, vibe-coded prototype to validate direction before committing to full design.</li>
+        </ul>
+      </div>
+
+      <!-- Key Design Decisions -->
+      <div class="case-section" id="key-design-decisions">
+        <div class="case-eyebrow">Key Design Decisions</div>
+        <div class="case-s-title">20% Core, 80% Marketplace</div>
+        <ul class="case-list">
+          <li>Anchored the Home experience around a 20% Core (compensation, calendar, alerts) that centres every seller, with an 80% Marketplace of tools curated per segment.</li>
+          <li>Designed segment-specific recommendations — e.g. High-Volume/Velocity sellers (SMB & Commercial AE/BDR) need to know who is "hot" right now, while Major Accounts/Prime AEs need deeper account-health and utilization signals.</li>
+          <li>Prioritised an account health / utilization tracker to flag attrition risk months ahead of a renewal conversation.</li>
+          <li>Proposed an AI-powered RFP Searchable Library to reuse successful proposal answers from past wins instead of starting from scratch.</li>
+          <li>Chose AI-native tools (Google AI Studio) over traditional wireframe-first Figma work to compress the cycle from idea to testable prototype.</li>
+        </ul>
+      </div>
+
+      <!-- Challenges -->
+      <div class="case-section" id="challenges">
+        <div class="case-eyebrow">Challenges</div>
+        <div class="case-s-title">One dashboard, many workflows</div>
+        <ul class="case-list">
+          <li>Balancing a "one-size-fits-all" dashboard against real differences in cognitive load and workflow across seller segments.</li>
+          <li>Moving fast with AI-generated prototypes while still validating direction with the right stakeholders before over-investing in polish.</li>
+          <li>Coordinating async across a broad set of stakeholders without a live workshop for every review.</li>
+        </ul>
+      </div>
+
+      <!-- Outcome & Impact -->
+      <div class="case-section" id="outcome-impact">
+        <div class="case-eyebrow">Outcome &amp; Impact</div>
+        <div class="case-s-title">Validated direction, faster than a wireframe cycle</div>
+        <ul class="case-list">
+          <li>Delivered a low-fidelity mockup and a working vibe-coded prototype used to gather early stakeholder feedback.</li>
+          <li>Validated the segmented "20% Core / 80% Marketplace" direction ahead of full design commitment.</li>
+          <li>Demonstrated a faster, AI-native path from workshop to testable prototype, later referenced as part of a broader shift toward AI-native design tools (Gemini/Slackbot for research and synthesis, Claude Code/Design and Figma Make for live prototyping).</li>
+        </ul>
+      </div>
+
+      <!-- What I Learned -->
+      <div class="case-section" id="what-i-learned">
+        <div class="case-eyebrow">What I Learned</div>
+        <div class="case-quote">
+          <div class="case-quote-text">"AI prototyping tools let you skip a slow wireframe-then-build cycle and get a clickable, testable design in front of stakeholders fast — trading traditional high-fidelity mockups for quicker, vibe-coded validation earlier in the process."</div>
+          <div class="case-quote-author">
+            <div class="quote-avatar"></div>
+            <div><div class="quote-name">Nakeem Carty</div><div class="quote-role">UI/UX Designer</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reference Material -->
+      <div class="case-section" id="reference-material">
+        <div class="case-eyebrow">Reference Material</div>
+        <ul class="case-list small">
+          <li>Seller Start UX Project canvas (Mario Picariello) — source brief, personas, and JTBD research.</li>
+          <li>AI Studio prototype — shared via async walkthrough video and live link.</li>
+        </ul>
+      </div>
+
+      </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <div class="footer-brand-top"><div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div><h3 class="footer-name">Nakeem Carty</h3></div>
+          <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
+          <span class="footer-credit">© 2026 by Nakeem Carty</span>
+        </div>
+        <div><div class="footer-col-title">Links</div><ul class="footer-links"><li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li><li><a href="#" onclick="switchTabByName('about');return false;">About</a></li><li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li></ul></div>
+        <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li></ul><div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- ══════════ CASE STUDY: TEAMING AGREEMENT ══════════ -->
+  <div class="panel" id="tab-case-teaming-agreement">
+    <div class="case-study active">
+      <div class="case-layout">
+      <aside class="case-sidebar">
+        <button class="case-back-btn" onclick="switchTabByName('projects')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back
+        </button>
+        <nav class="case-toc">
+          <a href="#overview" class="case-toc-link">Overview</a>
+          <a href="#the-problem" class="case-toc-link">The Problem</a>
+          <a href="#my-role" class="case-toc-link">My Role</a>
+          <a href="#key-design-decisions" class="case-toc-link">Key Design Decisions</a>
+          <a href="#challenges" class="case-toc-link">Challenges</a>
+          <a href="#outcome-impact" class="case-toc-link">Outcome &amp; Impact</a>
+          <a href="#what-i-learned" class="case-toc-link">What I Learned</a>
+          <a href="#reference-material" class="case-toc-link">Reference Material</a>
+        </nav>
+      </aside>
+      <div class="case-content">
+
+      <!-- Breadcrumb -->
+      <div class="case-breadcrumb">
+        <a onclick="switchTabByName('projects')">Work</a>
+        <span class="case-breadcrumb-sep">·</span>
+        <span class="case-year">2026</span>
+      </div>
+
+      <h1 class="case-title">Digitising multi-region seller contracts</h1>
+      <p class="case-intro">Teaming Agreements are contracts sellers enter into whenever they share a multi-region account — think Disney US, Disney Europe, and Disney Japan all under one umbrella deal. This project digitised those agreements, moving them from Quip documents into structured Org62 objects.</p>
+
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-inner" style="background:linear-gradient(150deg, #d0c8f0 0%, #ecc8d8 50%, #f8e0b0 100%);">
+          <div class="case-hero-card">
+            <div class="cs-stat-row">
+              <div class="cs-stat"><div class="cs-stat-label">Sources of truth</div><div class="cs-stat-val">2 → 1</div></div>
+              <div class="cs-stat"><div class="cs-stat-label">Strategic accounts</div><div class="cs-stat-val" style="font-size:14px;">Disney, Amazon, Google</div></div>
+              <div class="cs-stat"><div class="cs-stat-label">Status</div><div class="cs-stat-val" style="font-size:15px;">Shipped</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meta -->
+      <div class="case-meta-row">
+        <div><div class="case-meta-label">Role</div><div class="case-meta-value">Lead UX Designer</div></div>
+        <div><div class="case-meta-label">Timeline</div><div class="case-meta-value">Oct 2025 – Jan 2026</div></div>
+        <div><div class="case-meta-label">Team</div><div class="case-meta-value">Engineering + Policy</div></div>
+        <div><div class="case-meta-label">Platform</div><div class="case-meta-value">Org62 (Salesforce)</div></div>
+      </div>
+
+      <div style="height:40px;border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
+
+      <!-- Overview -->
+      <div class="case-section" id="overview">
+        <div class="case-eyebrow">Overview</div>
+        <div class="case-s-title">From Quip document to Org62 object</div>
+        <p class="case-body">Teaming Agreements are contracts sellers enter into whenever they share a multi-region account — think Disney US, Disney Europe, and Disney Japan all under one umbrella deal. This project digitised those agreements, moving them from Quip documents into structured Org62 objects.</p>
+      </div>
+
+      <!-- The Problem -->
+      <div class="case-section" id="the-problem">
+        <div class="case-eyebrow">The Problem</div>
+        <div class="case-s-title">Two sources of truth for the same contract</div>
+        <p class="case-body">Only a small number of high-value Org62 accounts (Disney, Amazon, Google, and similar strategic accounts) have a Teaming Agreement attached — but the policy team was accepting two sources of truth: the formal Teaming Agreement object and a separate Quip document covering the same terms. On top of that, sellers creating new Opportunities had no visibility into whether the account they were working on already had an active Teaming Agreement — a gap that risked deals being structured without accounting for existing multi-region split arrangements.</p>
+        <div class="case-quote">
+          <div class="case-quote-text">"Two sources of truth for the same contract meant sellers and the policy team could end up looking at different versions of the same agreement."</div>
+        </div>
+      </div>
+
+      <!-- My Role -->
+      <div class="case-section" id="my-role">
+        <div class="case-eyebrow">My Role</div>
+        <div class="case-s-title">Translating contract logic into a usable interface</div>
+        <ul class="case-list">
+          <li>Designed the modal flows, Roles &amp; Responsibilities tables, stepped navigation, and "How We Work Together" sections.</li>
+          <li>Worked directly with both the engineering team and the business/policy stakeholders to translate contract logic into a usable interface.</li>
+          <li>Design tools used: Figma (modal flows, tables, stepped navigation prototypes), Org62/Salesforce Lightning (native object and layout design), Quip (requirements gathering and documentation).</li>
+        </ul>
+      </div>
+
+      <!-- Key Design Decisions -->
+      <div class="case-section" id="key-design-decisions">
+        <div class="case-eyebrow">Key Design Decisions</div>
+        <div class="case-s-title">Flagging agreements before deals get structured</div>
+        <ul class="case-list">
+          <li>Added new structured sections directly into the Teaming Agreement object so it could fully replace the Quip document as the single source of truth.</li>
+          <li>Designed a visual indicator on the Accounts page to flag when an active Teaming Agreement is already linked to an account being worked on.</li>
+          <li>Designed a similar visual indicator and link on the Opportunity creation page, directing sellers to the linked Teaming Agreement field the moment an account with an existing agreement is added.</li>
+          <li>Used stepped modal progress indicators to guide users through the agreement creation flow, and worked within technical constraints on table components inside Detail tabs.</li>
+        </ul>
+      </div>
+
+      <!-- Challenges -->
+      <div class="case-section" id="challenges">
+        <div class="case-eyebrow">Challenges</div>
+        <div class="case-s-title">Business logic over visual polish</div>
+        <ul class="case-list">
+          <li>Reconciling two sources of truth (Quip vs. Org62) without disrupting the policy team's existing process.</li>
+          <li>Technical constraints around table components in Org62 Detail tabs.</li>
+          <li>Nuanced UX decisions, like how to make a stepped modal progress indicator intuitive for a contract-heavy workflow.</li>
+          <li>Navigating business logic where edge cases (partial agreements, expired agreements, multi-region splits) mattered as much as visual polish.</li>
+        </ul>
+      </div>
+
+      <!-- Outcome & Impact -->
+      <div class="case-section" id="outcome-impact">
+        <div class="case-eyebrow">Outcome &amp; Impact</div>
+        <div class="case-s-title">One source of truth, signed off by both sides</div>
+        <ul class="case-list">
+          <li>Both business stakeholders and engineering signed off satisfied with the completed work.</li>
+          <li>The Teaming Agreement object became the intended single source of truth, replacing the parallel Quip process.</li>
+        </ul>
+      </div>
+
+      <!-- What I Learned -->
+      <div class="case-section" id="what-i-learned">
+        <div class="case-eyebrow">What I Learned</div>
+        <div class="case-quote">
+          <div class="case-quote-text">"Designing for internal operational tools is a different discipline from consumer-facing design — the business logic is complex, and edge cases matter just as much as visual polish."</div>
+          <div class="case-quote-author">
+            <div class="quote-avatar"></div>
+            <div><div class="quote-name">Nakeem Carty</div><div class="quote-role">Lead UX Designer</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reference Material -->
+      <div class="case-section" id="reference-material">
+        <div class="case-eyebrow">Reference Material</div>
+        <ul class="case-list small">
+          <li>Teaming Agreement Project (Quip) — original project brief and requirements.</li>
+          <li>Teaming Agreement Figma design file.</li>
+          <li>Meet Nakeem — Team Member Profile canvas — source summary of this project.</li>
+        </ul>
+      </div>
+
+      </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <div class="footer-brand-top"><div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div><h3 class="footer-name">Nakeem Carty</h3></div>
+          <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
+          <span class="footer-credit">© 2026 by Nakeem Carty</span>
+        </div>
+        <div><div class="footer-col-title">Links</div><ul class="footer-links"><li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li><li><a href="#" onclick="switchTabByName('about');return false;">About</a></li><li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li></ul></div>
+        <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li></ul><div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- ══════════ CASE STUDY: CONSUMPTION PLAN ══════════ -->
+  <div class="panel" id="tab-case-consumption-plan">
+    <div class="case-study active">
+      <div class="case-layout">
+      <aside class="case-sidebar">
+        <button class="case-back-btn" onclick="switchTabByName('projects')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back
+        </button>
+        <nav class="case-toc">
+          <a href="#overview" class="case-toc-link">Overview</a>
+          <a href="#the-problem" class="case-toc-link">The Problem</a>
+          <a href="#my-role" class="case-toc-link">My Role</a>
+          <a href="#key-design-decisions" class="case-toc-link">Key Design Decisions</a>
+          <a href="#challenges" class="case-toc-link">Challenges</a>
+          <a href="#outcome-impact" class="case-toc-link">Outcome &amp; Impact</a>
+          <a href="#what-i-learned" class="case-toc-link">What I Learned</a>
+          <a href="#reference-material" class="case-toc-link">Reference Material</a>
+        </nav>
+      </aside>
+      <div class="case-content">
+
+      <!-- Breadcrumb -->
+      <div class="case-breadcrumb">
+        <a onclick="switchTabByName('projects')">Work</a>
+        <span class="case-breadcrumb-sep">·</span>
+        <span class="case-year">2026</span>
+      </div>
+
+      <h1 class="case-title">Replacing spreadsheets with native usage tracking</h1>
+      <p class="case-intro">Consumption Plans track Agentforce and Data Cloud usage for Account Executives. This project moved that tracking out of manual Google Sheets and into Org62, giving product owners a single, unified in-account view.</p>
+
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-inner" style="background:linear-gradient(160deg, #c8d8f0 0%, #dcc0d8 60%, #f0c8a0 100%);">
+          <div class="case-hero-card">
+            <div class="cs-stat-row">
+              <div class="cs-stat"><div class="cs-stat-label">Previous system</div><div class="cs-stat-val" style="font-size:15px;">Google Sheets</div></div>
+              <div class="cs-stat"><div class="cs-stat-label">New system</div><div class="cs-stat-val" style="font-size:15px;">Native Org62</div></div>
+              <div class="cs-stat"><div class="cs-stat-label">Presented at</div><div class="cs-stat-val" style="font-size:15px;">Config London</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meta -->
+      <div class="case-meta-row">
+        <div><div class="case-meta-label">Role</div><div class="case-meta-value">Lead UI/UX Designer</div></div>
+        <div><div class="case-meta-label">Timeline</div><div class="case-meta-value">May 2025 – Jan 2026</div></div>
+        <div><div class="case-meta-label">Team</div><div class="case-meta-value">Consumption Plan team</div></div>
+        <div><div class="case-meta-label">Platform</div><div class="case-meta-value">Org62 (Salesforce)</div></div>
+      </div>
+
+      <div style="height:40px;border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
+
+      <!-- Overview -->
+      <div class="case-section" id="overview">
+        <div class="case-eyebrow">Overview</div>
+        <div class="case-s-title">Usage tracking, moved out of the spreadsheet</div>
+        <p class="case-body">Consumption Plans track Agentforce and Data Cloud usage for Account Executives. This project moved that tracking out of manual Google Sheets and into Org62, giving product owners a single, unified in-account view.</p>
+      </div>
+
+      <!-- The Problem -->
+      <div class="case-section" id="the-problem">
+        <div class="case-eyebrow">The Problem</div>
+        <div class="case-s-title">No real-time visibility, disconnected from the account</div>
+        <p class="case-body">Consumption tracking lived in spreadsheets — disconnected from the account record itself, prone to version drift, and offering no real-time visibility for product owners. The team needed a native Org62 experience that could replace the spreadsheet entirely without losing the flexibility people were used to.</p>
+      </div>
+
+      <!-- My Role -->
+      <div class="case-section" id="my-role">
+        <div class="case-eyebrow">My Role</div>
+        <div class="case-s-title">Owning the screen flow end to end</div>
+        <ul class="case-list">
+          <li>Empty state dashboard.</li>
+          <li>Modal creation flow.</li>
+          <li>KPI views.</li>
+          <li>Bar chart visualisations.</li>
+          <li>Edited / updated states.</li>
+          <li>Design tools used: Figma (screen flow, empty states, KPI views, bar chart visualisations), Org62/Salesforce Lightning (native build), tooltips and progressive-disclosure patterns prototyped in Figma before handoff.</li>
+        </ul>
+      </div>
+
+      <!-- Key Design Decisions -->
+      <div class="case-section" id="key-design-decisions">
+        <div class="case-eyebrow">Key Design Decisions</div>
+        <div class="case-s-title">Building confidence during the transition</div>
+        <ul class="case-list">
+          <li>Designed intentional empty states so first-time users weren't dropped into a blank screen with no guidance on what to do next.</li>
+          <li>Used progressive disclosure to avoid overwhelming users who were used to a flat spreadsheet with a more structured, staged Org62 flow.</li>
+          <li>Paired KPI summary views with bar chart visualisations so product owners could see usage trends at a glance rather than scanning rows of data.</li>
+          <li>Applied tooltips throughout the data entry flow to reduce ambiguity during the transition from the old manual process.</li>
+        </ul>
+      </div>
+
+      <!-- Challenges -->
+      <div class="case-section" id="challenges">
+        <div class="case-eyebrow">Challenges</div>
+        <div class="case-s-title">A behavioural challenge, not a visual one</div>
+        <p class="case-body">The core challenge was behavioural, not visual: helping AEs and product owners let go of a tool they were already comfortable with (however manual) and trust a new system. That meant every empty state, tooltip, and data-entry interaction had to actively build confidence rather than just look polished.</p>
+      </div>
+
+      <!-- Outcome & Impact -->
+      <div class="case-section" id="outcome-impact">
+        <div class="case-eyebrow">Outcome &amp; Impact</div>
+        <div class="case-s-title">Shipped, and presented on stage</div>
+        <ul class="case-list">
+          <li>Shipped to the Consumption Plan team as a live Org62 feature.</li>
+          <li>Presented as a case study at Config London 2025.</li>
+        </ul>
+      </div>
+
+      <!-- What I Learned -->
+      <div class="case-section" id="what-i-learned">
+        <div class="case-eyebrow">What I Learned</div>
+        <div class="case-quote">
+          <div class="case-quote-text">"Empty states and progressive disclosure aren't cosmetic details — they're the difference-maker when onboarding users off a familiar system and onto something entirely new."</div>
+          <div class="case-quote-author">
+            <div class="quote-avatar"></div>
+            <div><div class="quote-name">Nakeem Carty</div><div class="quote-role">Lead UI/UX Designer</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reference Material -->
+      <div class="case-section" id="reference-material">
+        <div class="case-eyebrow">Reference Material</div>
+        <ul class="case-list small">
+          <li>Meet Nakeem — Team Member Profile canvas — source summary of this project.</li>
+        </ul>
+      </div>
+
+      </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <div class="footer-brand-top"><div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div><h3 class="footer-name">Nakeem Carty</h3></div>
+          <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
+          <span class="footer-credit">© 2026 by Nakeem Carty</span>
+        </div>
+        <div><div class="footer-col-title">Links</div><ul class="footer-links"><li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li><li><a href="#" onclick="switchTabByName('about');return false;">About</a></li><li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li></ul></div>
+        <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li></ul><div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- ══════════ CASE STUDY: ACTIVITY EDITOR ══════════ -->
+  <div class="panel" id="tab-case-activity-editor">
+    <div class="case-study active">
+      <div class="case-layout">
+      <aside class="case-sidebar">
+        <button class="case-back-btn" onclick="switchTabByName('projects')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back
+        </button>
+        <nav class="case-toc">
+          <a href="#overview" class="case-toc-link">Overview</a>
+          <a href="#the-problem" class="case-toc-link">The Problem</a>
+          <a href="#my-role" class="case-toc-link">My Role</a>
+          <a href="#key-design-decisions" class="case-toc-link">Key Design Decisions</a>
+          <a href="#challenges" class="case-toc-link">Challenges</a>
+          <a href="#outcome-impact" class="case-toc-link">Outcome &amp; Impact</a>
+          <a href="#what-i-learned" class="case-toc-link">What I Learned</a>
+          <a href="#reference-material" class="case-toc-link">Reference Material</a>
+        </nav>
+      </aside>
+      <div class="case-content">
+
+      <!-- Breadcrumb -->
+      <div class="case-breadcrumb">
+        <a onclick="switchTabByName('projects')">Work</a>
+        <span class="case-breadcrumb-sep">·</span>
+        <span class="case-year">2022–2024</span>
+      </div>
+
+      <h1 class="case-title">Bridging calendar activity into Salesforce</h1>
+      <p class="case-intro">Activity Editor is a tool that lets Solution Engineers log their Google Calendar events as Org62 (Salesforce) activities directly from Slack or the Solutions Workspace web app — bridging the gap between calendar activity and CRM data capture.</p>
+
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-inner" style="background:linear-gradient(150deg, #c8d4f0 0%, #d8c0e8 40%, #f0d0c0 100%);">
+          <div class="case-hero-card">
+            <div class="cs-stat-row">
+              <div class="cs-stat"><div class="cs-stat-label">Surfaces</div><div class="cs-stat-val" style="font-size:15px;">Slack + Web</div></div>
+              <div class="cs-stat"><div class="cs-stat-label">Years live</div><div class="cs-stat-val" style="font-size:15px;">2022–2024</div></div>
+              <div class="cs-stat"><div class="cs-stat-label">Evolved into</div><div class="cs-stat-val" style="font-size:14px;">Activity Editor 2.0</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meta -->
+      <div class="case-meta-row">
+        <div><div class="case-meta-label">Role</div><div class="case-meta-value">UI/UX Designer</div></div>
+        <div><div class="case-meta-label">Timeline</div><div class="case-meta-value">2022 – 2024</div></div>
+        <div><div class="case-meta-label">Team</div><div class="case-meta-value">Q Branch / Solutions Workspace</div></div>
+        <div><div class="case-meta-label">Platform</div><div class="case-meta-value">Slack + Rails/Angular</div></div>
+      </div>
+
+      <div style="height:40px;border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
+
+      <!-- Overview -->
+      <div class="case-section" id="overview">
+        <div class="case-eyebrow">Overview</div>
+        <div class="case-s-title">Your bridge from GCal to Org62</div>
+        <p class="case-body">Activity Editor is a tool that lets Solution Engineers log their Google Calendar events as Org62 (Salesforce) activities directly from Slack or the Solutions Workspace web app — bridging the gap between calendar activity and CRM data capture. It sits within the Admin &amp; Insights pillar of Solutions Workspace, and today runs as a hybrid Rails + Angular app connecting Google Calendar to Salesforce.</p>
+      </div>
+
+      <!-- The Problem -->
+      <div class="case-section" id="the-problem">
+        <div class="case-eyebrow">The Problem</div>
+        <div class="case-s-title">The classic "swivel-chair" problem</div>
+        <p class="case-body">SEs were spending significant admin time manually re-entering calendar events into Salesforce as logged activities — a classic "swivel-chair" problem. Getting SEs to consistently log activities was less a tooling gap and more a behavioural and adoption challenge: the tool had to feel frictionless enough that people would actually use it, and close enough to their existing workflow (Google Calendar) that the transition felt natural.</p>
+        <div class="case-quote">
+          <div class="case-quote-text">"Designing for behaviour change is hard — a tool only earns adoption once the small details (colour, defaults, timing) remove enough friction that logging activities becomes second nature."</div>
+        </div>
+      </div>
+
+      <!-- My Role -->
+      <div class="case-section" id="my-role">
+        <div class="case-eyebrow">My Role</div>
+        <div class="case-s-title">Design across two surfaces</div>
+        <ul class="case-list">
+          <li>Design iterations and feature development across both surfaces: the Slack app and the Solutions Workspace web experience.</li>
+          <li>Design QA against the SLDS design system as engineering built to spec.</li>
+          <li>Contributed to the Confirming Activities A/B testing research, evaluating how a confirmation step affected logging accuracy and completion rates.</li>
+        </ul>
+      </div>
+
+      <!-- Key Design Decisions -->
+      <div class="case-section" id="key-design-decisions">
+        <div class="case-eyebrow">Key Design Decisions</div>
+        <div class="case-s-title">Removing friction at the point of logging</div>
+        <ul class="case-list">
+          <li>Google Calendar colour labels integrated — pulling in SEs' existing GCal event colours so the tool felt like an extension of their calendar, not a separate system.</li>
+          <li>Pre-set task types — reducing the number of decisions an SE had to make per event to lower friction at the point of logging.</li>
+          <li>Confirming Activities feature — a confirmation UX pattern tested via A/B research before going live.</li>
+          <li>Mixpanel analytics tracking — instrumented to understand real usage patterns and adoption over time.</li>
+        </ul>
+      </div>
+
+      <!-- Challenges -->
+      <div class="case-section" id="challenges">
+        <div class="case-eyebrow">Challenges</div>
+        <div class="case-s-title">Consistency across two surfaces</div>
+        <ul class="case-list">
+          <li>Balancing consistency across two different surfaces (Slack app vs. web app) while keeping the experience unified.</li>
+          <li>Security reviews, analytics tracking requirements, and platform migrations added technical complexity alongside the pure design work.</li>
+          <li>Getting the default record type and settings right — a recurring theme in support requests, showing how much default-state design matters for adoption.</li>
+        </ul>
+      </div>
+
+      <!-- Outcome & Impact -->
+      <div class="case-section" id="outcome-impact">
+        <div class="case-eyebrow">Outcome &amp; Impact</div>
+        <div class="case-s-title">From onboarding staple to Activity Editor 2.0</div>
+        <ul class="case-list">
+          <li>Shipped on both Slack and Solutions Workspace.</li>
+          <li>Became a core part of the SE workflow, featured in SE onboarding programmes.</li>
+          <li>Later evolved into "Activity Editor 2.0," described internally as "your bridge from GCal to Org62," with an established API surface for Google Calendar reads, Salesforce writes, and bulk activity logging.</li>
+          <li>Inspired follow-on ideas from the SE community for an Agentforce-powered version that could recommend activity-to-opportunity links automatically.</li>
+        </ul>
+      </div>
+
+      <!-- What I Learned -->
+      <div class="case-section" id="what-i-learned">
+        <div class="case-eyebrow">What I Learned</div>
+        <div class="case-quote">
+          <div class="case-quote-text">"Designing for behaviour change is hard — the product has to earn adoption. Getting the details right, like pulling in GCal colours and pre-setting task types, was the difference between a tool people ignored and one that became part of their daily routine."</div>
+          <div class="case-quote-author">
+            <div class="quote-avatar"></div>
+            <div><div class="quote-name">Nakeem Carty</div><div class="quote-role">UI/UX Designer</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reference Material -->
+      <div class="case-section" id="reference-material">
+        <div class="case-eyebrow">Reference Material</div>
+        <ul class="case-list small">
+          <li>Meet Nakeem — Team Member Profile canvas — original source summary of this project.</li>
+          <li>Activity Editor Repository Exploration Summary — technical architecture write-up.</li>
+          <li>Activity Editor Data Flow — how calendar + user input becomes a Salesforce Event.</li>
+        </ul>
+      </div>
+
+      </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <div class="footer-brand-top"><div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div><h3 class="footer-name">Nakeem Carty</h3></div>
+          <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
+          <span class="footer-credit">© 2026 by Nakeem Carty</span>
+        </div>
+        <div><div class="footer-col-title">Links</div><ul class="footer-links"><li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li><li><a href="#" onclick="switchTabByName('about');return false;">About</a></li><li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li></ul></div>
+        <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li></ul><div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div>
+      </footer>
+
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<script src="script.js"></script>
+</body>
+</html>
