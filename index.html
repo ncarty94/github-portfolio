@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nakeem Carty — UX Designer</title>
+<title>Nakeem Carty | UX Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/ney2unl.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,110 +16,108 @@
 
   <!-- HEADER -->
   <header class="site-header header-visible" id="siteHeader">
-    <span class="site-brand">Nakeem Carty</span>
-    <nav class="site-nav" id="siteNav">
-      <div class="nav-highlight" id="navHighlight"></div>
-      <button class="tab-btn active" data-tab="projects" onclick="switchTab(this)">Projects</button>
-      <button class="tab-btn" data-tab="about" onclick="switchTab(this)">About</button>
-      <button class="tab-btn" data-tab="resume" onclick="switchTab(this)">Resume</button>
-    </nav>
+    <div class="site-header-inner">
+      <span class="site-brand">Nakeem Carty</span>
+      <nav class="site-nav" id="siteNav">
+        <div class="nav-highlight" id="navHighlight"></div>
+        <button class="tab-btn active" data-tab="projects" onclick="switchTab(this)">Projects</button>
+        <button class="tab-btn" data-tab="about" onclick="switchTab(this)">About</button>
+        <button class="tab-btn" data-tab="resume" onclick="switchTab(this)">Resume</button>
+      </nav>
+    </div>
   </header>
 
   <!-- ══════════ PROJECTS ══════════ -->
   <div class="panel active" id="tab-projects">
-    <div class="projects-grid">
-
-      <!-- Seller Start -->
-      <div class="proj-card" onclick="openCase('seller-start')">
-        <div class="proj-thumb seller-thumb">
-          <div class="seller-mock">
-            <div class="seller-core">
-              <div class="seller-chip"><div class="seller-chip-label">COMP</div><div class="seller-chip-val">92%</div></div>
-              <div class="seller-chip"><div class="seller-chip-label">CALENDAR</div><div class="seller-chip-val">3</div></div>
-              <div class="seller-chip"><div class="seller-chip-label">ALERTS</div><div class="seller-chip-val">2</div></div>
-            </div>
-            <div class="seller-label">MARKETPLACE</div>
-            <div class="seller-grid">
-              <div class="seller-tile"><div class="seller-tile-title">Account Health</div><div class="seller-tile-line"></div></div>
-              <div class="seller-tile"><div class="seller-tile-title">RFP Library</div><div class="seller-tile-line"></div></div>
-              <div class="seller-tile"><div class="seller-tile-title">Utilization</div><div class="seller-tile-line"></div></div>
-              <div class="seller-tile"><div class="seller-tile-title">SPIFF / QAP</div><div class="seller-tile-line"></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="proj-meta">
-          <span class="proj-desc">Seller Start</span>
-          <span class="proj-tag">Web App</span>
-        </div>
-      </div>
+    <div class="projects-heading">
+      <h1 class="case-title">Taming Enterprise Cloud, One Pixel at a Time</h1>
+      <p class="case-lead">Strategic UX case studies showing how I turned complex Salesforce ecosystem workflows into simple, elegant digital products.</p>
+    </div>
+    <div class="case-study-list">
 
       <!-- Teaming Agreement -->
-      <div class="proj-card" onclick="openCase('teaming-agreement')">
-        <div class="proj-thumb teaming-thumb">
-          <div class="teaming-mock">
-            <div class="teaming-steps">
-              <div class="teaming-step active">1</div><div class="teaming-step-line"></div>
-              <div class="teaming-step active">2</div><div class="teaming-step-line"></div>
-              <div class="teaming-step">3</div><div class="teaming-step-line"></div>
-              <div class="teaming-step">4</div>
-            </div>
-            <div class="teaming-table">
-              <div class="teaming-row"><span class="teaming-row-role">Disney US</span><span class="teaming-row-resp">Lead account owner</span></div>
-              <div class="teaming-row"><span class="teaming-row-role">Disney Europe</span><span class="teaming-row-resp">Regional support</span></div>
-              <div class="teaming-row"><span class="teaming-row-role">Disney Japan</span><span class="teaming-row-resp">Regional support</span></div>
-            </div>
-          </div>
+      <div class="case-study-card">
+        <div class="cs-image-wrap">
+          <div class="cs-thumb" aria-hidden="true"><img src="img/projects/ta-hero.png" alt=""></div>
         </div>
-        <div class="proj-meta">
-          <span class="proj-desc">Teaming Agreement</span>
-          <span class="proj-tag">Enterprise Tool</span>
+        <div class="cs-content">
+          <div class="cs-tags">
+            <span class="cs-tag">Enterprise Workflows</span>
+            <span class="cs-tag">Org62 / SLDS</span>
+            <span class="cs-tag">Contract UX</span>
+          </div>
+          <h2 class="cs-headline">Teaming Agreement</h2>
+          <p class="cs-desc">Digitised multi-region strategic contracts from Quip into native Org62 objects, establishing a single source of truth and adding proactive visual alerts across Accounts and Opportunities.</p>
+          <span class="btn-outline btn-outline-primary btn-outline-icon" onclick="openCase('teaming-agreement')">View Case Study<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
         </div>
       </div>
 
       <!-- Consumption Plan -->
-      <div class="proj-card" onclick="openCase('consumption-plan')">
-        <div class="proj-thumb consumption-thumb">
-          <div class="consumption-mock">
-            <div class="consumption-kpis">
-              <div class="consumption-kpi"><div class="consumption-kpi-label">AGENTFORCE</div><div class="consumption-kpi-val">68%</div></div>
-              <div class="consumption-kpi"><div class="consumption-kpi-label">DATA CLOUD</div><div class="consumption-kpi-val">41%</div></div>
-              <div class="consumption-kpi"><div class="consumption-kpi-label">RENEWAL</div><div class="consumption-kpi-val">Q2</div></div>
-            </div>
-            <div class="consumption-label">USAGE OVER TIME</div>
-            <div class="consumption-bars">
-              <div class="consumption-bar" style="height:12px"></div>
-              <div class="consumption-bar" style="height:18px"></div>
-              <div class="consumption-bar" style="height:14px"></div>
-              <div class="consumption-bar hi" style="height:26px"></div>
-              <div class="consumption-bar" style="height:20px"></div>
-              <div class="consumption-bar" style="height:16px"></div>
-            </div>
-          </div>
+      <div class="case-study-card">
+        <div class="cs-image-wrap">
+          <div class="cs-thumb" aria-hidden="true"><img src="img/projects/cp-hero.png" alt=""></div>
         </div>
-        <div class="proj-meta">
-          <span class="proj-desc">Consumption Plan</span>
-          <span class="proj-tag">Dashboard</span>
+        <div class="cs-content">
+          <div class="cs-tags">
+            <span class="cs-tag">Enterprise SaaS</span>
+            <span class="cs-tag">Data Visualisation</span>
+            <span class="cs-tag">Behavioural Design</span>
+          </div>
+          <h2 class="cs-headline">Consumption Plan</h2>
+          <p class="cs-desc">Replaced manual spreadsheet tracking with a native Org62 experience that combines progressive disclosure, guided empty states, and real-time KPI visualisations to drive adoption. Shipped live and presented at Config London 2025.</p>
+          <span class="btn-outline btn-outline-primary btn-outline-icon" onclick="openCase('consumption-plan')">View Case Study<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
         </div>
       </div>
 
       <!-- Activity Editor -->
-      <div class="proj-card" onclick="openCase('activity-editor')">
-        <div class="proj-thumb activity-thumb">
-          <div class="activity-mock">
-            <div class="activity-slack">
-              <div class="activity-avatar"></div>
-              <div class="activity-bubble"><b>Client Sync</b> — 45 min<br>Logged as Org62 Activity ✓</div>
-            </div>
-            <div class="activity-flow">
-              <div class="activity-chip"><span class="activity-chip-dot" style="background:#4285F4"></span>Google Calendar</div>
-              <span class="activity-arrow">→</span>
-              <div class="activity-chip"><span class="activity-chip-dot" style="background:#1a2340"></span>Org62 Activity</div>
-            </div>
-          </div>
+      <div class="case-study-card">
+        <div class="cs-image-wrap">
+          <div class="cs-thumb" aria-hidden="true"><img src="img/projects/ae-hero.png" alt=""></div>
         </div>
-        <div class="proj-meta">
-          <span class="proj-desc">Activity Editor</span>
-          <span class="proj-tag">Slack App</span>
+        <div class="cs-content">
+          <div class="cs-tags">
+            <span class="cs-tag">Slack App UX</span>
+            <span class="cs-tag">A/B Research</span>
+            <span class="cs-tag">Behavioural Design</span>
+          </div>
+          <h2 class="cs-headline">Activity Editor</h2>
+          <p class="cs-desc">Reduced admin friction for Solution Engineers by bridging Google Calendar and Salesforce across Slack and Web, using GCal colour-matching and A/B-tested confirmation patterns.</p>
+          <span class="btn-outline btn-outline-primary btn-outline-icon" onclick="openCase('activity-editor')">View Case Study<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+        </div>
+      </div>
+
+      <!-- Account Planning Agent Experience -->
+      <div class="case-study-card">
+        <div class="cs-image-wrap">
+          <div class="cs-thumb" aria-hidden="true"><img src="img/projects/qap-hero.png" alt=""></div>
+        </div>
+        <div class="cs-content">
+          <div class="cs-tags">
+            <span class="cs-tag">Agentic AI</span>
+            <span class="cs-tag">Slack App UX</span>
+            <span class="cs-tag">Org62 / SLDS</span>
+            <span class="cs-tag">Design Strategy</span>
+          </div>
+          <h2 class="cs-headline">Account Planning Agent Experience</h2>
+          <p class="cs-desc">Prototyped a seamless Slack-to-Org62 agentic workflow that uses Gemini-powered research to turn manual, hand-authored account planning into an automated AI experience ahead of CKO planning cycles.</p>
+          <span class="btn-outline btn-outline-primary btn-outline-icon" onclick="openCase('quota-attainment-planning')">View Case Study<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+        </div>
+      </div>
+
+      <!-- CQI Tool -->
+      <div class="case-study-card">
+        <div class="cs-image-wrap">
+          <div class="cs-thumb" aria-hidden="true"><img src="img/projects/drt-hero.png" alt=""></div>
+        </div>
+        <div class="cs-content">
+          <div class="cs-tags">
+            <span class="cs-tag">Deal Desk</span>
+            <span class="cs-tag">Pre-Quoting</span>
+            <span class="cs-tag">Figma Prototype</span>
+          </div>
+          <h2 class="cs-headline">CQI Tool</h2>
+          <p class="cs-desc">The pre-quoting process was manual and fragmented. I designed the CQI layout with in-line guidance banners, FMV Capture Ratio and Commercial Terms Score modules with error/warning states, and a Scenario Editing flow, ordering the page as guidance, then score, then detail.</p>
+          <span class="btn-outline btn-outline-primary" onclick="openCase('digital-drt-cqi-tool')">View Case Study</span>
         </div>
       </div>
 
@@ -221,9 +220,9 @@
     <!-- Interests -->
     <div class="interests-wrap">
       <div class="s-heading">
-        <span class="s-title">What I'm into</span>
-        <span class="s-title-muted"> right now</span>
+        <span class="s-title">What Keeps Me Inspired</span>
       </div>
+      <p class="s-subtitle">Side projects, weekend hobbies, and the non-design things fuelling my creativity</p>
       <div class="interests-chips">
         <span class="interest-chip">Running</span>
         <span class="interest-chip">Films & TV</span>
@@ -243,104 +242,94 @@
     <!-- Feedback -->
     <div class="feedback-wrap">
       <div class="s-heading">
-        <span class="s-title">Kind words</span>
-        <span class="s-title-muted"> from people I've worked with</span>
+        <span class="s-title">Kind Words from Teammates</span>
+        <div class="feedback-nav">
+          <button class="feedback-nav-btn" id="feedbackPrev" aria-label="Previous testimonial"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+          <button class="feedback-nav-btn" id="feedbackNext" aria-label="Next testimonial"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        </div>
       </div>
-      <div class="feedback-grid">
-        <div class="feedback-card">
-          <div class="quote-mark">&ldquo;</div>
-          <div class="case-quote-text">Nakeem was great to work with, he quickly jumped in to support the wireframes for the Consumption Plan and even recorded a demo that was later used for enablement. Despite the quick turnaround, he delivered high-quality work, and the stakeholder was very happy with the outcome. I'd definitely work with him again.</div>
-          <div class="quote-divider"></div>
-          <div class="quote-footer">
-            <div class="quote-avatar">SY</div>
-            <div class="quote-header">
-              <div class="quote-name">Sofia Young</div>
-              <div class="quote-role">Project Manager • Salesforce</div>
+      <p class="s-subtitle">A peek into how I show up for my team, handle complex challenges, and support those around me.</p>
+      <div class="feedback-carousel">
+        <div class="feedback-grid" id="feedback-grid">
+          <div class="feedback-card">
+            <div class="quote-header-row">
+              <div class="quote-avatar">SY</div>
+              <div class="quote-header">
+                <div class="quote-name">Sofia Young</div>
+                <div class="quote-role">Project Manager, Salesforce</div>
+              </div>
             </div>
+            <div class="case-quote-text">Nakeem was great to work with, he quickly jumped in to support the wireframes for the Consumption Plan and even recorded a demo that was later used for enablement. Despite the quick turnaround, he delivered high-quality work, and the stakeholder was very happy with the outcome. I'd definitely work with him again.</div>
           </div>
-        </div>
-        <div class="feedback-card">
-          <div class="quote-mark">&ldquo;</div>
-          <div class="case-quote-text">Nakeem was super easy to work with. He asked excellent questions and provided great insight and input into the overall strategy we were pursuing.</div>
-          <div class="quote-divider"></div>
-          <div class="quote-footer">
-            <div class="quote-avatar">AK</div>
-            <div class="quote-header">
-              <div class="quote-name">Anna Krevets</div>
-              <div class="quote-role">Product Owner • Salesforce</div>
+          <div class="feedback-card">
+            <div class="quote-header-row">
+              <div class="quote-avatar">AK</div>
+              <div class="quote-header">
+                <div class="quote-name">Anna Krevets</div>
+                <div class="quote-role">Product Owner, Salesforce</div>
+              </div>
             </div>
+            <div class="case-quote-text">Nakeem was super easy to work with. He asked excellent questions and provided great insight and input into the overall strategy we were pursuing.</div>
           </div>
-        </div>
-        <div class="feedback-card">
-          <div class="quote-mark">&ldquo;</div>
-          <div class="case-quote-text">Great communicator. Asked good questions.</div>
-          <div class="quote-divider"></div>
-          <div class="quote-footer">
-            <div class="quote-avatar">NS</div>
-            <div class="quote-header">
-              <div class="quote-name">Nagarjun Singaram</div>
-              <div class="quote-role">Business Analyst • Salesforce</div>
+          <div class="feedback-card">
+            <div class="quote-header-row">
+              <div class="quote-avatar">NS</div>
+              <div class="quote-header">
+                <div class="quote-name">Nagarjun Singaram</div>
+                <div class="quote-role">Business Analyst, Salesforce</div>
+              </div>
             </div>
+            <div class="case-quote-text">Great communicator. Asked good questions.</div>
           </div>
-        </div>
-        <div class="feedback-card">
-          <div class="quote-mark">&ldquo;</div>
-          <div class="case-quote-text">The prompt response and more detailed designs.</div>
-          <div class="quote-divider"></div>
-          <div class="quote-footer">
-            <div class="quote-avatar">MV</div>
-            <div class="quote-header">
-              <div class="quote-name">Manoj Varma Vadapalli</div>
-              <div class="quote-role">Software Engineer • Salesforce</div>
+          <div class="feedback-card">
+            <div class="quote-header-row">
+              <div class="quote-avatar">MV</div>
+              <div class="quote-header">
+                <div class="quote-name">Manoj Varma Vadapalli</div>
+                <div class="quote-role">Software Engineer, Salesforce</div>
+              </div>
             </div>
+            <div class="case-quote-text">The prompt response and more detailed designs.</div>
           </div>
-        </div>
-        <div class="feedback-card">
-          <div class="quote-mark">&ldquo;</div>
-          <div class="case-quote-text">What I appreciated most about Nakeem's work was his exceptional creativity in crafting innovative prototypes and UX designs specifically for our LWC components in the teaming agreement project. He demonstrated deep expertise with SLDS, ensuring every interface adhered perfectly to Salesforce's Lightning Design System.</div>
-          <div class="quote-divider"></div>
-          <div class="quote-footer">
-            <div class="quote-avatar">SD</div>
-            <div class="quote-header">
-              <div class="quote-name">Sankeerth Dharmakkola</div>
-              <div class="quote-role">Software Engineer • Salesforce</div>
+          <div class="feedback-card">
+            <div class="quote-header-row">
+              <div class="quote-avatar">SD</div>
+              <div class="quote-header">
+                <div class="quote-name">Sankeerth Dharmakkola</div>
+                <div class="quote-role">Software Engineer, Salesforce</div>
+              </div>
             </div>
+            <div class="case-quote-text">What I appreciated most about Nakeem's work was his exceptional creativity in crafting innovative prototypes and UX designs specifically for our LWC components in the teaming agreement project. He demonstrated deep expertise with SLDS, ensuring every interface adhered perfectly to Salesforce's Lightning Design System.</div>
           </div>
-        </div>
-        <div class="feedback-card">
-          <div class="quote-mark">&ldquo;</div>
-          <div class="case-quote-text">Nakeem listens to the requirements carefully, knows the platform and trends very well, and comes up with the best options in a timely manner. He's pleasant to work with.</div>
-          <div class="quote-divider"></div>
-          <div class="quote-footer">
-            <div class="quote-avatar">NM</div>
-            <div class="quote-header">
-              <div class="quote-name">Negar Masarrat</div>
-              <div class="quote-role">Product Manager • Salesforce</div>
+          <div class="feedback-card">
+            <div class="quote-header-row">
+              <div class="quote-avatar">NM</div>
+              <div class="quote-header">
+                <div class="quote-name">Negar Masarrat</div>
+                <div class="quote-role">Product Manager, Salesforce</div>
+              </div>
             </div>
+            <div class="case-quote-text">Nakeem listens to the requirements carefully, knows the platform and trends very well, and comes up with the best options in a timely manner. He's pleasant to work with.</div>
           </div>
-        </div>
-        <div class="feedback-card">
-          <div class="quote-mark">&ldquo;</div>
-          <div class="case-quote-text">Nakeem has been very helpful with explaining the details of the designs, suggesting great ideas on how the design would be great for the user.</div>
-          <div class="quote-divider"></div>
-          <div class="quote-footer">
-            <div class="quote-avatar">MC</div>
-            <div class="quote-header">
-              <div class="quote-name">Madhuri Cadium</div>
-              <div class="quote-role">Software Engineer • Salesforce</div>
+          <div class="feedback-card">
+            <div class="quote-header-row">
+              <div class="quote-avatar">MC</div>
+              <div class="quote-header">
+                <div class="quote-name">Madhuri Cadium</div>
+                <div class="quote-role">Software Engineer, Salesforce</div>
+              </div>
             </div>
+            <div class="case-quote-text">Nakeem has been very helpful with explaining the details of the designs, suggesting great ideas on how the design would be great for the user.</div>
           </div>
-        </div>
-        <div class="feedback-card">
-          <div class="quote-mark">&ldquo;</div>
-          <div class="case-quote-text">Quickness in understanding the ask, creativity in design while still meeting all business requirements, turnaround time, and collaboration in general.</div>
-          <div class="quote-divider"></div>
-          <div class="quote-footer">
-            <div class="quote-avatar">VS</div>
-            <div class="quote-header">
-              <div class="quote-name">Vanessa Siegel</div>
-              <div class="quote-role">Project Manager • Salesforce</div>
+          <div class="feedback-card">
+            <div class="quote-header-row">
+              <div class="quote-avatar">VS</div>
+              <div class="quote-header">
+                <div class="quote-name">Vanessa Siegel</div>
+                <div class="quote-role">Project Manager, Salesforce</div>
+              </div>
             </div>
+            <div class="case-quote-text">Quickness in understanding the ask, creativity in design while still meeting all business requirements, turnaround time, and collaboration in general.</div>
           </div>
         </div>
       </div>
@@ -491,159 +480,6 @@
     </footer>
   </div>
 
-  <!-- ══════════ CASE STUDY: SELLER START ══════════ -->
-  <div class="panel" id="tab-case-seller-start">
-    <div class="case-study active">
-      <div class="case-layout">
-      <aside class="case-sidebar">
-        <button class="case-back-btn" onclick="switchTabByName('projects')">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-          Back
-        </button>
-        <nav class="case-toc">
-          <a href="#overview" class="case-toc-link">Overview</a>
-          <a href="#the-problem" class="case-toc-link">The Problem</a>
-          <a href="#my-role" class="case-toc-link">My Role</a>
-          <a href="#key-design-decisions" class="case-toc-link">Key Design Decisions</a>
-          <a href="#challenges" class="case-toc-link">Challenges</a>
-          <a href="#outcome-impact" class="case-toc-link">Outcome &amp; Impact</a>
-          <a href="#what-i-learned" class="case-toc-link">What I Learned</a>
-          <a href="#reference-material" class="case-toc-link">Reference Material</a>
-        </nav>
-      </aside>
-      <div class="case-content">
-
-      <!-- Breadcrumb -->
-      <div class="case-breadcrumb">
-        <a onclick="switchTabByName('projects')">Work</a>
-        <span class="case-breadcrumb-sep">·</span>
-        <span class="case-year">2026</span>
-      </div>
-
-      <h1 class="case-title">Redesigning the seller's daily starting point</h1>
-      <p class="case-intro">Seller Start set out to redesign the seller's daily "starting point" — replacing a fragmented experience spread across Slack, Salesforce, calendars, and dashboards like SPIFF and QAP with a single, unified Home experience.</p>
-
-      <!-- Hero -->
-      <div class="case-hero">
-        <div class="case-hero-inner" style="background:linear-gradient(155deg, #c8d8f0 0%, #dcc8e8 55%, #f0d8b8 100%);">
-          <div class="case-hero-card">
-            <div class="cs-stat-row">
-              <div class="cs-stat"><div class="cs-stat-label">Segments mapped</div><div class="cs-stat-val">3</div></div>
-              <div class="cs-stat"><div class="cs-stat-label">Core signals</div><div class="cs-stat-val" style="font-size:15px;">Comp · Cal · Alerts</div></div>
-              <div class="cs-stat"><div class="cs-stat-label">Prototype path</div><div class="cs-stat-val" style="font-size:15px;">AI Studio</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Meta -->
-      <div class="case-meta-row">
-        <div><div class="case-meta-label">Role</div><div class="case-meta-value">UI/UX Designer</div></div>
-        <div><div class="case-meta-label">Timeline</div><div class="case-meta-value">Feb 2026 – ongoing</div></div>
-        <div><div class="case-meta-label">Team</div><div class="case-meta-value">Solutions Workspace / GBGA</div></div>
-        <div><div class="case-meta-label">Tools</div><div class="case-meta-value">FigJam, Google AI Studio</div></div>
-      </div>
-
-      <div style="height:40px;border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
-
-      <!-- Overview -->
-      <div class="case-section" id="overview">
-        <div class="case-eyebrow">Overview</div>
-        <div class="case-s-title">One home, instead of four tools</div>
-        <p class="case-body">Seller Start set out to redesign the seller's daily "starting point" — replacing a fragmented experience spread across Slack, Salesforce, calendars, and dashboards like SPIFF and QAP with a single unified Home experience.</p>
-      </div>
-
-      <!-- The Problem -->
-      <div class="case-section" id="the-problem">
-        <div class="case-eyebrow">The Problem</div>
-        <div class="case-s-title">Information anxiety, with no daily digest</div>
-        <p class="case-body">Sellers were suffering from "information anxiety": critical data was siloed across too many tools, and there was no single sales-focused daily digest pulling together what mattered for that day. Success was defined as a unified narrative — compensation, alerts, calendar, account health, consumption/utilization risk flags, and an AI-powered RFP snippet library — all centralised, with a consistent experience regardless of where the seller started their day.</p>
-      </div>
-
-      <!-- My Role -->
-      <div class="case-section" id="my-role">
-        <div class="case-eyebrow">My Role</div>
-        <div class="case-s-title">Workshop-driven, AI-native process</div>
-        <ul class="case-list">
-          <li>Ran an initial FigJam workshop with a collaborator to map seller needs across personas: Major Accounts, Prime AEs, and Specialist AEs.</li>
-          <li>Instead of moving straight from FigJam into Figma, took the workshop output into Google AI Studio to build a working prototype directly.</li>
-          <li>Used the AI Studio prototype to gather early feedback, sharing an async walkthrough video plus a live link so stakeholders could try the design themselves rather than sit through a live sync.</li>
-          <li>Produced a low-fidelity mockup alongside a rapid, vibe-coded prototype to validate direction before committing to full design.</li>
-        </ul>
-      </div>
-
-      <!-- Key Design Decisions -->
-      <div class="case-section" id="key-design-decisions">
-        <div class="case-eyebrow">Key Design Decisions</div>
-        <div class="case-s-title">20% Core, 80% Marketplace</div>
-        <ul class="case-list">
-          <li>Anchored the Home experience around a 20% Core (compensation, calendar, alerts) that centres every seller, with an 80% Marketplace of tools curated per segment.</li>
-          <li>Designed segment-specific recommendations — e.g. High-Volume/Velocity sellers (SMB & Commercial AE/BDR) need to know who is "hot" right now, while Major Accounts/Prime AEs need deeper account-health and utilization signals.</li>
-          <li>Prioritised an account health / utilization tracker to flag attrition risk months ahead of a renewal conversation.</li>
-          <li>Proposed an AI-powered RFP Searchable Library to reuse successful proposal answers from past wins instead of starting from scratch.</li>
-          <li>Chose AI-native tools (Google AI Studio) over traditional wireframe-first Figma work to compress the cycle from idea to testable prototype.</li>
-        </ul>
-      </div>
-
-      <!-- Challenges -->
-      <div class="case-section" id="challenges">
-        <div class="case-eyebrow">Challenges</div>
-        <div class="case-s-title">One dashboard, many workflows</div>
-        <ul class="case-list">
-          <li>Balancing a "one-size-fits-all" dashboard against real differences in cognitive load and workflow across seller segments.</li>
-          <li>Moving fast with AI-generated prototypes while still validating direction with the right stakeholders before over-investing in polish.</li>
-          <li>Coordinating async across a broad set of stakeholders without a live workshop for every review.</li>
-        </ul>
-      </div>
-
-      <!-- Outcome & Impact -->
-      <div class="case-section" id="outcome-impact">
-        <div class="case-eyebrow">Outcome &amp; Impact</div>
-        <div class="case-s-title">Validated direction, faster than a wireframe cycle</div>
-        <ul class="case-list">
-          <li>Delivered a low-fidelity mockup and a working vibe-coded prototype used to gather early stakeholder feedback.</li>
-          <li>Validated the segmented "20% Core / 80% Marketplace" direction ahead of full design commitment.</li>
-          <li>Demonstrated a faster, AI-native path from workshop to testable prototype, later referenced as part of a broader shift toward AI-native design tools (Gemini/Slackbot for research and synthesis, Claude Code/Design and Figma Make for live prototyping).</li>
-        </ul>
-      </div>
-
-      <!-- What I Learned -->
-      <div class="case-section" id="what-i-learned">
-        <div class="case-eyebrow">What I Learned</div>
-        <div class="case-quote">
-          <div class="case-quote-text">"AI prototyping tools let you skip a slow wireframe-then-build cycle and get a clickable, testable design in front of stakeholders fast — trading traditional high-fidelity mockups for quicker, vibe-coded validation earlier in the process."</div>
-          <div class="case-quote-author">
-            <div class="quote-avatar"></div>
-            <div><div class="quote-name">Nakeem Carty</div><div class="quote-role">UI/UX Designer</div></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Reference Material -->
-      <div class="case-section" id="reference-material">
-        <div class="case-eyebrow">Reference Material</div>
-        <ul class="case-list small">
-          <li>Seller Start UX Project canvas (Mario Picariello) — source brief, personas, and JTBD research.</li>
-          <li>AI Studio prototype — shared via async walkthrough video and live link.</li>
-        </ul>
-      </div>
-
-      </div>
-      </div>
-
-      <footer class="site-footer">
-        <div class="footer-brand">
-          <div class="footer-brand-top"><div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div><h3 class="footer-name">Nakeem Carty</h3></div>
-          <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
-          <span class="footer-credit">© 2026 by Nakeem Carty</span>
-        </div>
-        <div><div class="footer-col-title">Links</div><ul class="footer-links"><li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li><li><a href="#" onclick="switchTabByName('about');return false;">About</a></li><li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li></ul></div>
-        <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li></ul><div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div>
-      </footer>
-
-    </div>
-  </div>
-
   <!-- ══════════ CASE STUDY: TEAMING AGREEMENT ══════════ -->
   <div class="panel" id="tab-case-teaming-agreement">
     <div class="case-study active">
@@ -651,7 +487,7 @@
       <aside class="case-sidebar">
         <button class="case-back-btn" onclick="switchTabByName('projects')">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-          Back
+          All Projects
         </button>
         <nav class="case-toc">
           <a href="#overview" class="case-toc-link">Overview</a>
@@ -659,33 +495,25 @@
           <a href="#my-role" class="case-toc-link">My Role</a>
           <a href="#key-design-decisions" class="case-toc-link">Key Design Decisions</a>
           <a href="#challenges" class="case-toc-link">Challenges</a>
-          <a href="#outcome-impact" class="case-toc-link">Outcome &amp; Impact</a>
-          <a href="#what-i-learned" class="case-toc-link">What I Learned</a>
-          <a href="#reference-material" class="case-toc-link">Reference Material</a>
+          <a href="#outcome-impact" class="case-toc-link">Metrics and Measures</a>
+          <a href="#designs" class="case-toc-link">Designs</a>
+          <a href="#lessons" class="case-toc-link">Final Thoughts</a>
         </nav>
       </aside>
       <div class="case-content">
 
-      <!-- Breadcrumb -->
-      <div class="case-breadcrumb">
-        <a onclick="switchTabByName('projects')">Work</a>
-        <span class="case-breadcrumb-sep">·</span>
-        <span class="case-year">2026</span>
+      <div class="cs-tags">
+        <span class="cs-tag">Enterprise Workflows</span>
+        <span class="cs-tag">Org62 / SLDS</span>
+        <span class="cs-tag">Contract UX</span>
       </div>
-
-      <h1 class="case-title">Digitising multi-region seller contracts</h1>
-      <p class="case-intro">Teaming Agreements are contracts sellers enter into whenever they share a multi-region account — think Disney US, Disney Europe, and Disney Japan all under one umbrella deal. This project digitised those agreements, moving them from Quip documents into structured Org62 objects.</p>
+      <h1 class="case-title">Digitising Multi-Region Seller Contracts</h1>
+      <p class="case-lead">Digitised multi-region strategic contracts from Quip into native Org62 objects, establishing a single source of truth and adding proactive visual alerts across Accounts and Opportunities.</p>
 
       <!-- Hero -->
       <div class="case-hero">
-        <div class="case-hero-inner" style="background:linear-gradient(150deg, #d0c8f0 0%, #ecc8d8 50%, #f8e0b0 100%);">
-          <div class="case-hero-card">
-            <div class="cs-stat-row">
-              <div class="cs-stat"><div class="cs-stat-label">Sources of truth</div><div class="cs-stat-val">2 → 1</div></div>
-              <div class="cs-stat"><div class="cs-stat-label">Strategic accounts</div><div class="cs-stat-val" style="font-size:14px;">Disney, Amazon, Google</div></div>
-              <div class="cs-stat"><div class="cs-stat-label">Status</div><div class="cs-stat-val" style="font-size:15px;">Shipped</div></div>
-            </div>
-          </div>
+        <div class="case-hero-inner" style="background:var(--Gradient-Core-3-Color-Gradient, linear-gradient(180deg, #00B3FF 0%, #90D0FE 51.92%, #EAF5FE 100%));">
+          <div class="case-hero-image"><img src="img/projects/ta-hero.png" alt="Teaming Agreement record showing Roles & Responsibilities and Teaming Agreement Resources"></div>
         </div>
       </div>
 
@@ -697,90 +525,139 @@
         <div><div class="case-meta-label">Platform</div><div class="case-meta-value">Org62 (Salesforce)</div></div>
       </div>
 
-      <div style="height:40px;border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
+      <div class="case-divider"></div>
 
       <!-- Overview -->
       <div class="case-section" id="overview">
         <div class="case-eyebrow">Overview</div>
-        <div class="case-s-title">From Quip document to Org62 object</div>
-        <p class="case-body">Teaming Agreements are contracts sellers enter into whenever they share a multi-region account — think Disney US, Disney Europe, and Disney Japan all under one umbrella deal. This project digitised those agreements, moving them from Quip documents into structured Org62 objects.</p>
+        <div class="case-s-title">From Quip Document to Org62 Object</div>
+        <p class="case-body">Teaming Agreements are contracts sellers enter into whenever they share a multi-region account, for example Disney US, Disney Europe, and Disney Japan all under one umbrella deal. This project digitised those agreements, moving them from Quip documents into structured Org62 objects.</p>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- The Problem -->
       <div class="case-section" id="the-problem">
         <div class="case-eyebrow">The Problem</div>
-        <div class="case-s-title">Two sources of truth for the same contract</div>
-        <p class="case-body">Only a small number of high-value Org62 accounts (Disney, Amazon, Google, and similar strategic accounts) have a Teaming Agreement attached — but the policy team was accepting two sources of truth: the formal Teaming Agreement object and a separate Quip document covering the same terms. On top of that, sellers creating new Opportunities had no visibility into whether the account they were working on already had an active Teaming Agreement — a gap that risked deals being structured without accounting for existing multi-region split arrangements.</p>
+        <div class="case-s-title">Two Sources of Truth for the Same Contract</div>
+        <p class="case-body">Only a small number of high-value Org62 accounts (Disney, Amazon, Google, and similar strategic accounts) have a Teaming Agreement attached, but the existing process created real risk on both sides.</p>
+        <div class="case-card-grid">
+          <div class="case-card"><div class="case-card-num">01</div><div class="case-card-title">Two sources of truth</div><div class="case-card-body">The policy team was accepting both the formal Teaming Agreement object and a separate Quip document covering the same terms.</div></div>
+          <div class="case-card"><div class="case-card-num">02</div><div class="case-card-title">No visibility at deal creation</div><div class="case-card-body">Sellers creating new Opportunities had no visibility into whether the account already had an active Teaming Agreement, risking deals structured without accounting for existing multi-region splits.</div></div>
+        </div>
         <div class="case-quote">
-          <div class="case-quote-text">"Two sources of truth for the same contract meant sellers and the policy team could end up looking at different versions of the same agreement."</div>
+          <div class="case-quote-text">"Two sources of truth for the same contract meant <span class="case-quote-highlight">sellers and the policy team could end up looking at different versions of the same agreement</span>."</div>
         </div>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- My Role -->
       <div class="case-section" id="my-role">
         <div class="case-eyebrow">My Role</div>
-        <div class="case-s-title">Translating contract logic into a usable interface</div>
-        <ul class="case-list">
-          <li>Designed the modal flows, Roles &amp; Responsibilities tables, stepped navigation, and "How We Work Together" sections.</li>
-          <li>Worked directly with both the engineering team and the business/policy stakeholders to translate contract logic into a usable interface.</li>
-          <li>Design tools used: Figma (modal flows, tables, stepped navigation prototypes), Org62/Salesforce Lightning (native object and layout design), Quip (requirements gathering and documentation).</li>
-        </ul>
+        <div class="case-s-title">Translating Contract Logic into a Usable Interface</div>
+        <div class="case-card-grid">
+          <div class="case-card"><div class="case-card-num">01</div><div class="case-card-title">Modal &amp; table design</div><div class="case-card-body">Designed the modal flows, Roles &amp; Responsibilities tables, stepped navigation, and "How We Work Together" sections.</div></div>
+          <div class="case-card"><div class="case-card-num">02</div><div class="case-card-title">Cross-functional translation</div><div class="case-card-body">Worked directly with both the engineering team and the business/policy stakeholders to translate contract logic into a usable interface.</div></div>
+          <div class="case-card"><div class="case-card-num">03</div><div class="case-card-title">Tooling</div><div class="case-card-body">Figma (modal flows, tables, stepped navigation prototypes), Org62/Salesforce Lightning (native object and layout design), and Quip (requirements gathering and documentation).</div></div>
+        </div>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- Key Design Decisions -->
       <div class="case-section" id="key-design-decisions">
         <div class="case-eyebrow">Key Design Decisions</div>
-        <div class="case-s-title">Flagging agreements before deals get structured</div>
-        <ul class="case-list">
-          <li>Added new structured sections directly into the Teaming Agreement object so it could fully replace the Quip document as the single source of truth.</li>
-          <li>Designed a visual indicator on the Accounts page to flag when an active Teaming Agreement is already linked to an account being worked on.</li>
-          <li>Designed a similar visual indicator and link on the Opportunity creation page, directing sellers to the linked Teaming Agreement field the moment an account with an existing agreement is added.</li>
-          <li>Used stepped modal progress indicators to guide users through the agreement creation flow, and worked within technical constraints on table components inside Detail tabs.</li>
-        </ul>
-      </div>
-
-      <!-- Challenges -->
-      <div class="case-section" id="challenges">
-        <div class="case-eyebrow">Challenges</div>
-        <div class="case-s-title">Business logic over visual polish</div>
-        <ul class="case-list">
-          <li>Reconciling two sources of truth (Quip vs. Org62) without disrupting the policy team's existing process.</li>
-          <li>Technical constraints around table components in Org62 Detail tabs.</li>
-          <li>Nuanced UX decisions, like how to make a stepped modal progress indicator intuitive for a contract-heavy workflow.</li>
-          <li>Navigating business logic where edge cases (partial agreements, expired agreements, multi-region splits) mattered as much as visual polish.</li>
-        </ul>
-      </div>
-
-      <!-- Outcome & Impact -->
-      <div class="case-section" id="outcome-impact">
-        <div class="case-eyebrow">Outcome &amp; Impact</div>
-        <div class="case-s-title">One source of truth, signed off by both sides</div>
-        <ul class="case-list">
-          <li>Both business stakeholders and engineering signed off satisfied with the completed work.</li>
-          <li>The Teaming Agreement object became the intended single source of truth, replacing the parallel Quip process.</li>
-        </ul>
-      </div>
-
-      <!-- What I Learned -->
-      <div class="case-section" id="what-i-learned">
-        <div class="case-eyebrow">What I Learned</div>
-        <div class="case-quote">
-          <div class="case-quote-text">"Designing for internal operational tools is a different discipline from consumer-facing design — the business logic is complex, and edge cases matter just as much as visual polish."</div>
-          <div class="case-quote-author">
-            <div class="quote-avatar"></div>
-            <div><div class="quote-name">Nakeem Carty</div><div class="quote-role">Lead UX Designer</div></div>
+        <div class="case-s-title">Flagging Agreements Before Deals Get Structured</div>
+        <div class="case-workflow">
+          <div class="case-workflow-step">
+            <div class="case-workflow-num">01</div>
+            <div><div class="case-workflow-title">Single source of truth</div><div class="case-workflow-body">Added new structured sections directly into the Teaming Agreement object so it could fully replace the Quip document as the single source of truth.</div></div>
+          </div>
+          <div class="case-workflow-step">
+            <div class="case-workflow-num">02</div>
+            <div><div class="case-workflow-title">Account-level flag</div><div class="case-workflow-body">Designed a visual indicator on the Accounts page to flag when an active Teaming Agreement is already linked to an account being worked on.</div></div>
+          </div>
+          <div class="case-workflow-step">
+            <div class="case-workflow-num">03</div>
+            <div><div class="case-workflow-title">Opportunity-level flag</div><div class="case-workflow-body">Designed a similar visual indicator and link on the Opportunity creation page, directing sellers to the linked Teaming Agreement field the moment an account with an existing agreement is added.</div></div>
+          </div>
+          <div class="case-workflow-step">
+            <div class="case-workflow-num">04</div>
+            <div><div class="case-workflow-title">Stepped modal guidance</div><div class="case-workflow-body">Used stepped modal progress indicators to guide users through the agreement creation flow, and worked within technical constraints on table components inside Detail tabs.</div></div>
           </div>
         </div>
       </div>
 
-      <!-- Reference Material -->
-      <div class="case-section" id="reference-material">
-        <div class="case-eyebrow">Reference Material</div>
-        <ul class="case-list small">
-          <li>Teaming Agreement Project (Quip) — original project brief and requirements.</li>
-          <li>Teaming Agreement Figma design file.</li>
-          <li>Meet Nakeem — Team Member Profile canvas — source summary of this project.</li>
-        </ul>
+      <div class="case-divider"></div>
+
+      <!-- Challenges -->
+      <div class="case-section" id="challenges">
+        <div class="case-eyebrow">Challenges</div>
+        <div class="case-s-title">Business Logic over Visual Polish</div>
+        <div class="case-callout-list">
+          <div class="case-callout"><div class="case-callout-label">Process</div><div class="case-callout-body">Reconciling two sources of truth (Quip vs. Org62) without disrupting the policy team's existing process.</div></div>
+          <div class="case-callout"><div class="case-callout-label">Technical</div><div class="case-callout-body">Technical constraints around table components in Org62 Detail tabs.</div></div>
+          <div class="case-callout"><div class="case-callout-label">UX</div><div class="case-callout-body">Nuanced UX decisions, like how to make a stepped modal progress indicator intuitive for a contract-heavy workflow.</div></div>
+          <div class="case-callout"><div class="case-callout-label">Business logic</div><div class="case-callout-body">Navigating business logic where edge cases (partial agreements, expired agreements, multi-region splits) mattered as much as visual polish.</div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Outcome & Impact -->
+      <div class="case-section" id="outcome-impact">
+        <div class="case-eyebrow">Metrics and Measures</div>
+        <div class="case-s-title">One Source of Truth, Signed off by Both Sides</div>
+        <div class="case-stat-grid">
+          <div class="case-stat-card"><div class="case-stat-num">Aligned</div><div class="case-stat-label">Both business stakeholders and engineering signed off satisfied with the completed work.</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">1 source</div><div class="case-stat-label">The Teaming Agreement object became the intended single source of truth, replacing the parallel Quip process.</div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Designs -->
+      <div class="case-section" id="designs">
+        <div class="case-eyebrow">Designs</div>
+        <div class="case-s-title">A Closer Look at the Screens</div>
+        <div class="case-img"><img src="img/teaming-agreement/teaming-agreement-01.png" alt="Teaming Agreement record page screen 1"></div>
+        <p class="case-img-caption">Screen 1 (Multi-Account Association): Enables sellers to link multiple account records to a single Teaming Agreement for seamless cross-account visibility and data reflection.</p>
+        <div class="case-img"><img src="img/teaming-agreement/teaming-agreement-02.png" alt="Teaming Agreement record page screen 2"></div>
+        <p class="case-img-caption">Screen 2 (Roles &amp; Responsibilities): Captures team member roles, regions, and specific duties directly on the record without disturbing downstream approval workflows.</p>
+        <div class="case-img"><img src="img/teaming-agreement/teaming-agreement-03.png" alt="Teaming Agreement record page screen 3"></div>
+        <p class="case-img-caption">Screen 3 (How We Work Together): Centralises team communication links, meeting cadences, and opportunity naming conventions into a unified rules-of-engagement section.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Lessons -->
+      <div class="case-section" id="lessons">
+        <div class="case-eyebrow">Final Thoughts</div>
+        <div class="case-s-title">Reflections &amp; System Impact</div>
+        <div class="case-h3">What I learned</div>
+        <p class="case-body">Designing for internal operational tools is a different discipline from consumer-facing design. The business logic is complex, and edge cases matter just as much as visual polish.</p>
+        <div class="case-h3">What I'm most proud of</div>
+        <p class="case-body">Successfully eliminating parallel sources of truth by replacing fragmented Quip documents with a structured Org62 workflow. This provided sellers with immediate visibility into active multi-region deals while earning full alignment and satisfaction from both business and engineering stakeholders.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Explore More -->
+      <div class="case-explore">
+        <div class="case-eyebrow">Explore More</div>
+        <div class="case-explore-viewport">
+          <div class="case-explore-track">
+            <div class="case-explore-card" onclick="openCase('consumption-plan')"><div class="case-explore-img"><img src="img/projects/cp-hero.png" alt=""></div><p class="case-explore-caption">Consumption Plan</p></div>
+            <div class="case-explore-card" onclick="openCase('activity-editor')"><div class="case-explore-img"><img src="img/projects/ae-hero.png" alt=""></div><p class="case-explore-caption">Activity Editor</p></div>
+            <div class="case-explore-card" onclick="openCase('quota-attainment-planning')"><div class="case-explore-img"><img src="img/projects/qap-hero.png" alt=""></div><p class="case-explore-caption">Quota Attainment Planning</p></div>
+            <div class="case-explore-card" onclick="openCase('digital-drt-cqi-tool')"><div class="case-explore-img"><img src="img/projects/drt-hero.png" alt=""></div><p class="case-explore-caption">CQI Tool</p></div>
+            <div class="case-explore-card" onclick="openCase('consumption-plan')"><div class="case-explore-img"><img src="img/projects/cp-hero.png" alt=""></div><p class="case-explore-caption">Consumption Plan</p></div>
+            <div class="case-explore-card" onclick="openCase('activity-editor')"><div class="case-explore-img"><img src="img/projects/ae-hero.png" alt=""></div><p class="case-explore-caption">Activity Editor</p></div>
+            <div class="case-explore-card" onclick="openCase('quota-attainment-planning')"><div class="case-explore-img"><img src="img/projects/qap-hero.png" alt=""></div><p class="case-explore-caption">Quota Attainment Planning</p></div>
+            <div class="case-explore-card" onclick="openCase('digital-drt-cqi-tool')"><div class="case-explore-img"><img src="img/projects/drt-hero.png" alt=""></div><p class="case-explore-caption">CQI Tool</p></div>
+          </div>
+        </div>
       </div>
 
       </div>
@@ -806,7 +683,7 @@
       <aside class="case-sidebar">
         <button class="case-back-btn" onclick="switchTabByName('projects')">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-          Back
+          All Projects
         </button>
         <nav class="case-toc">
           <a href="#overview" class="case-toc-link">Overview</a>
@@ -814,33 +691,25 @@
           <a href="#my-role" class="case-toc-link">My Role</a>
           <a href="#key-design-decisions" class="case-toc-link">Key Design Decisions</a>
           <a href="#challenges" class="case-toc-link">Challenges</a>
-          <a href="#outcome-impact" class="case-toc-link">Outcome &amp; Impact</a>
-          <a href="#what-i-learned" class="case-toc-link">What I Learned</a>
-          <a href="#reference-material" class="case-toc-link">Reference Material</a>
+          <a href="#outcome-impact" class="case-toc-link">Metrics and Measures</a>
+          <a href="#designs" class="case-toc-link">Designs</a>
+          <a href="#lessons" class="case-toc-link">Final Thoughts</a>
         </nav>
       </aside>
       <div class="case-content">
 
-      <!-- Breadcrumb -->
-      <div class="case-breadcrumb">
-        <a onclick="switchTabByName('projects')">Work</a>
-        <span class="case-breadcrumb-sep">·</span>
-        <span class="case-year">2026</span>
+      <div class="cs-tags">
+        <span class="cs-tag">Enterprise SaaS</span>
+        <span class="cs-tag">Data Visualisation</span>
+        <span class="cs-tag">Behavioural Design</span>
       </div>
-
-      <h1 class="case-title">Replacing spreadsheets with native usage tracking</h1>
-      <p class="case-intro">Consumption Plans track Agentforce and Data Cloud usage for Account Executives. This project moved that tracking out of manual Google Sheets and into Org62, giving product owners a single, unified in-account view.</p>
+      <h1 class="case-title">Replacing Spreadsheets with Native Usage Tracking</h1>
+      <p class="case-lead">Replaced manual spreadsheet tracking with a native Org62 experience that combines progressive disclosure, guided empty states, and real-time KPI visualisations to drive adoption. Shipped live and presented at Config London 2025.</p>
 
       <!-- Hero -->
       <div class="case-hero">
-        <div class="case-hero-inner" style="background:linear-gradient(160deg, #c8d8f0 0%, #dcc0d8 60%, #f0c8a0 100%);">
-          <div class="case-hero-card">
-            <div class="cs-stat-row">
-              <div class="cs-stat"><div class="cs-stat-label">Previous system</div><div class="cs-stat-val" style="font-size:15px;">Google Sheets</div></div>
-              <div class="cs-stat"><div class="cs-stat-label">New system</div><div class="cs-stat-val" style="font-size:15px;">Native Org62</div></div>
-              <div class="cs-stat"><div class="cs-stat-label">Presented at</div><div class="cs-stat-val" style="font-size:15px;">Config London</div></div>
-            </div>
-          </div>
+        <div class="case-hero-inner" style="background:var(--Gradient-Core-3-Color-Gradient, linear-gradient(180deg, #00B3FF 0%, #90D0FE 51.92%, #EAF5FE 100%));">
+          <div class="case-hero-image"><img src="img/projects/cp-hero.png" alt="Account Consumption Plan tab showing Agentforce key performance indicators and monthly consumption forecast vs usage"></div>
         </div>
       </div>
 
@@ -852,83 +721,130 @@
         <div><div class="case-meta-label">Platform</div><div class="case-meta-value">Org62 (Salesforce)</div></div>
       </div>
 
-      <div style="height:40px;border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
+      <div class="case-divider"></div>
 
       <!-- Overview -->
       <div class="case-section" id="overview">
         <div class="case-eyebrow">Overview</div>
-        <div class="case-s-title">Usage tracking, moved out of the spreadsheet</div>
+        <div class="case-s-title">Usage Tracking, Moved out of the Spreadsheet</div>
         <p class="case-body">Consumption Plans track Agentforce and Data Cloud usage for Account Executives. This project moved that tracking out of manual Google Sheets and into Org62, giving product owners a single, unified in-account view.</p>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- The Problem -->
       <div class="case-section" id="the-problem">
         <div class="case-eyebrow">The Problem</div>
-        <div class="case-s-title">No real-time visibility, disconnected from the account</div>
-        <p class="case-body">Consumption tracking lived in spreadsheets — disconnected from the account record itself, prone to version drift, and offering no real-time visibility for product owners. The team needed a native Org62 experience that could replace the spreadsheet entirely without losing the flexibility people were used to.</p>
+        <div class="case-s-title">No Real-Time Visibility, Disconnected from the Account</div>
+        <p class="case-body">Consumption tracking lived in spreadsheets, disconnected from the account record itself, prone to version drift, and offering no real-time visibility for product owners. The team needed a native Org62 experience that could replace the spreadsheet entirely without losing the flexibility people were used to.</p>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- My Role -->
       <div class="case-section" id="my-role">
         <div class="case-eyebrow">My Role</div>
-        <div class="case-s-title">Owning the screen flow end to end</div>
-        <ul class="case-list">
-          <li>Empty state dashboard.</li>
-          <li>Modal creation flow.</li>
-          <li>KPI views.</li>
-          <li>Bar chart visualisations.</li>
-          <li>Edited / updated states.</li>
-          <li>Design tools used: Figma (screen flow, empty states, KPI views, bar chart visualisations), Org62/Salesforce Lightning (native build), tooltips and progressive-disclosure patterns prototyped in Figma before handoff.</li>
-        </ul>
+        <div class="case-s-title">Owning the Screen Flow End to End</div>
+        <div class="case-card-grid">
+          <div class="case-card"><div class="case-card-num">01</div><div class="case-card-title">Screen flow ownership</div><div class="case-card-body">Owned the end-to-end screen flow: empty state dashboard, modal creation flow, KPI views, bar chart visualisations, and edited/updated states.</div></div>
+          <div class="case-card"><div class="case-card-num">02</div><div class="case-card-title">Design tooling</div><div class="case-card-body">Figma for screen flow, empty states, KPI views, and bar chart visualisations; Org62/Salesforce Lightning for the native build; tooltips and progressive-disclosure patterns prototyped in Figma before handoff.</div></div>
+        </div>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- Key Design Decisions -->
       <div class="case-section" id="key-design-decisions">
         <div class="case-eyebrow">Key Design Decisions</div>
-        <div class="case-s-title">Building confidence during the transition</div>
-        <ul class="case-list">
-          <li>Designed intentional empty states so first-time users weren't dropped into a blank screen with no guidance on what to do next.</li>
-          <li>Used progressive disclosure to avoid overwhelming users who were used to a flat spreadsheet with a more structured, staged Org62 flow.</li>
-          <li>Paired KPI summary views with bar chart visualisations so product owners could see usage trends at a glance rather than scanning rows of data.</li>
-          <li>Applied tooltips throughout the data entry flow to reduce ambiguity during the transition from the old manual process.</li>
-        </ul>
-      </div>
-
-      <!-- Challenges -->
-      <div class="case-section" id="challenges">
-        <div class="case-eyebrow">Challenges</div>
-        <div class="case-s-title">A behavioural challenge, not a visual one</div>
-        <p class="case-body">The core challenge was behavioural, not visual: helping AEs and product owners let go of a tool they were already comfortable with (however manual) and trust a new system. That meant every empty state, tooltip, and data-entry interaction had to actively build confidence rather than just look polished.</p>
-      </div>
-
-      <!-- Outcome & Impact -->
-      <div class="case-section" id="outcome-impact">
-        <div class="case-eyebrow">Outcome &amp; Impact</div>
-        <div class="case-s-title">Shipped, and presented on stage</div>
-        <ul class="case-list">
-          <li>Shipped to the Consumption Plan team as a live Org62 feature.</li>
-          <li>Presented as a case study at Config London 2025.</li>
-        </ul>
-      </div>
-
-      <!-- What I Learned -->
-      <div class="case-section" id="what-i-learned">
-        <div class="case-eyebrow">What I Learned</div>
-        <div class="case-quote">
-          <div class="case-quote-text">"Empty states and progressive disclosure aren't cosmetic details — they're the difference-maker when onboarding users off a familiar system and onto something entirely new."</div>
-          <div class="case-quote-author">
-            <div class="quote-avatar"></div>
-            <div><div class="quote-name">Nakeem Carty</div><div class="quote-role">Lead UI/UX Designer</div></div>
+        <div class="case-s-title">Building Confidence During the Transition</div>
+        <div class="case-workflow">
+          <div class="case-workflow-step">
+            <div class="case-workflow-num">01</div>
+            <div><div class="case-workflow-title">Intentional empty states</div><div class="case-workflow-body">Designed intentional empty states so first-time users weren't dropped into a blank screen with no guidance on what to do next.</div></div>
+          </div>
+          <div class="case-workflow-step">
+            <div class="case-workflow-num">02</div>
+            <div><div class="case-workflow-title">Progressive disclosure</div><div class="case-workflow-body">Used progressive disclosure to avoid overwhelming users who were used to a flat spreadsheet with a more structured, staged Org62 flow.</div></div>
+          </div>
+          <div class="case-workflow-step">
+            <div class="case-workflow-num">03</div>
+            <div><div class="case-workflow-title">KPI and chart pairing</div><div class="case-workflow-body">Paired KPI summary views with bar chart visualisations so product owners could see usage trends at a glance rather than scanning rows of data.</div></div>
+          </div>
+          <div class="case-workflow-step">
+            <div class="case-workflow-num">04</div>
+            <div><div class="case-workflow-title">Guided tooltips</div><div class="case-workflow-body">Applied tooltips throughout the data entry flow to reduce ambiguity during the transition from the old manual process.</div></div>
           </div>
         </div>
       </div>
 
-      <!-- Reference Material -->
-      <div class="case-section" id="reference-material">
-        <div class="case-eyebrow">Reference Material</div>
-        <ul class="case-list small">
-          <li>Meet Nakeem — Team Member Profile canvas — source summary of this project.</li>
-        </ul>
+      <div class="case-divider"></div>
+
+      <!-- Challenges -->
+      <div class="case-section" id="challenges">
+        <div class="case-eyebrow">Challenges</div>
+        <div class="case-s-title">A Behavioural Challenge, Not a Visual One</div>
+        <p class="case-body">The core challenge was behavioural, not visual: helping AEs and product owners let go of a tool they were already comfortable with (however manual) and trust a new system. That meant every empty state, tooltip, and data-entry interaction had to actively build confidence rather than just look polished.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Outcome & Impact -->
+      <div class="case-section" id="outcome-impact">
+        <div class="case-eyebrow">Metrics and Measures</div>
+        <div class="case-s-title">Shipped, and Presented on Stage</div>
+        <div class="case-stat-grid">
+          <div class="case-stat-card"><div class="case-stat-num">Shipped</div><div class="case-stat-label">Live Org62 feature on the Consumption Plan team.</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">Stakeholder Sign-off</div><div class="case-stat-label">Both stakeholders signed off satisfied with the final design.</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">Team Adoption</div><div class="case-stat-label">Replaced manual spreadsheet tracking with a native, unified in-account view for the Consumption Plan team.</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">Design Approach</div><div class="case-stat-label">Empty states and progressive disclosure eased the shift from spreadsheet to structured flow.</div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Designs -->
+      <div class="case-section" id="designs">
+        <div class="case-eyebrow">Designs</div>
+        <div class="case-s-title">A Closer Look at the Screens</div>
+        <div class="case-img"><img src="img/consumption-plan/consumption-plan-01.png" alt="Account Forecasting tab showing KPI summary cards and a monthly consumption forecast vs usage table"></div>
+        <p class="case-img-caption">Screen 1 (Forecasting Overview): KPI summary cards paired with a monthly forecast vs usage table and bar chart, giving product owners an at-a-glance read on tracking progress.</p>
+        <div class="case-img"><img src="img/consumption-plan/consumption-plan-02.png" alt="Account Consumption Plan tab showing Agentforce and Data Cloud KPIs, forecast tables, and usage charts"></div>
+        <p class="case-img-caption">Screen 2 (Consumption Plan Tab): Agentforce and Data Cloud KPIs and forecast tables live directly on the account record, replacing the disconnected spreadsheet with a native, in-account view.</p>
+        <div class="case-img"><img src="img/consumption-plan/consumption-plan-03.png" alt="Edit Consumption Plan modal for entering contract dates, entitlement type, and allowance"></div>
+        <p class="case-img-caption">Screen 3 (Edit Consumption Plan): A guided modal for entering contract dates, entitlement type, and allowance, paired with tooltips to reduce ambiguity during data entry.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Lessons -->
+      <div class="case-section" id="lessons">
+        <div class="case-eyebrow">Final Thoughts</div>
+        <div class="case-s-title">Moving Enterprise Users from Sheets to Systems</div>
+        <div class="case-h3">What I learned</div>
+        <p class="case-body">Empty states and progressive disclosure aren't cosmetic details. They make the difference when onboarding users off a familiar system and onto something entirely new.</p>
+        <div class="case-h3">Next steps</div>
+        <p class="case-body">I would explore adding predictive usage alerts to proactively flag accounts at risk of under-consuming or exceeding their Agentforce and Data Cloud allocations well before renewal conversations hit. Additionally, I'd investigate surfacing real-time consumption signals inside daily seller communication channels like Slack to meet Account Executives directly in their existing workflow. Finally, I would implement telemetry tracking to measure the permanent drop-off from legacy Google Sheets and confirm total system adoption.</p>
+        <div class="case-h3">What I'm most proud of</div>
+        <p class="case-body">I am proudest of overcoming the steep behavioural challenge of transitioning product owners away from comfortable, manual spreadsheets into a native Org62 application. By leveraging intentional empty states, tooltips, and progressive disclosure flows, we built enough user trust to convert a fragmented tracking routine into a unified, live feature. Ultimately, this project proved that thoughtful micro-interactions are the true engine behind driving complex enterprise change management.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Explore More -->
+      <div class="case-explore">
+        <div class="case-eyebrow">Explore More</div>
+        <div class="case-explore-viewport">
+          <div class="case-explore-track">
+            <div class="case-explore-card" onclick="openCase('teaming-agreement')"><div class="case-explore-img"><img src="img/projects/ta-hero.png" alt=""></div><p class="case-explore-caption">Teaming Agreement</p></div>
+            <div class="case-explore-card" onclick="openCase('activity-editor')"><div class="case-explore-img"><img src="img/projects/ae-hero.png" alt=""></div><p class="case-explore-caption">Activity Editor</p></div>
+            <div class="case-explore-card" onclick="openCase('quota-attainment-planning')"><div class="case-explore-img"><img src="img/projects/qap-hero.png" alt=""></div><p class="case-explore-caption">Quota Attainment Planning</p></div>
+            <div class="case-explore-card" onclick="openCase('digital-drt-cqi-tool')"><div class="case-explore-img"><img src="img/projects/drt-hero.png" alt=""></div><p class="case-explore-caption">CQI Tool</p></div>
+            <div class="case-explore-card" onclick="openCase('teaming-agreement')"><div class="case-explore-img"><img src="img/projects/ta-hero.png" alt=""></div><p class="case-explore-caption">Teaming Agreement</p></div>
+            <div class="case-explore-card" onclick="openCase('activity-editor')"><div class="case-explore-img"><img src="img/projects/ae-hero.png" alt=""></div><p class="case-explore-caption">Activity Editor</p></div>
+            <div class="case-explore-card" onclick="openCase('quota-attainment-planning')"><div class="case-explore-img"><img src="img/projects/qap-hero.png" alt=""></div><p class="case-explore-caption">Quota Attainment Planning</p></div>
+            <div class="case-explore-card" onclick="openCase('digital-drt-cqi-tool')"><div class="case-explore-img"><img src="img/projects/drt-hero.png" alt=""></div><p class="case-explore-caption">CQI Tool</p></div>
+          </div>
+        </div>
       </div>
 
       </div>
@@ -954,7 +870,7 @@
       <aside class="case-sidebar">
         <button class="case-back-btn" onclick="switchTabByName('projects')">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-          Back
+          All Projects
         </button>
         <nav class="case-toc">
           <a href="#overview" class="case-toc-link">Overview</a>
@@ -962,33 +878,25 @@
           <a href="#my-role" class="case-toc-link">My Role</a>
           <a href="#key-design-decisions" class="case-toc-link">Key Design Decisions</a>
           <a href="#challenges" class="case-toc-link">Challenges</a>
-          <a href="#outcome-impact" class="case-toc-link">Outcome &amp; Impact</a>
-          <a href="#what-i-learned" class="case-toc-link">What I Learned</a>
-          <a href="#reference-material" class="case-toc-link">Reference Material</a>
+          <a href="#outcome-impact" class="case-toc-link">Metrics and Measures</a>
+          <a href="#designs" class="case-toc-link">Designs</a>
+          <a href="#lessons" class="case-toc-link">Final Thoughts</a>
         </nav>
       </aside>
       <div class="case-content">
 
-      <!-- Breadcrumb -->
-      <div class="case-breadcrumb">
-        <a onclick="switchTabByName('projects')">Work</a>
-        <span class="case-breadcrumb-sep">·</span>
-        <span class="case-year">2022–2024</span>
+      <div class="cs-tags">
+        <span class="cs-tag">Slack App UX</span>
+        <span class="cs-tag">A/B Research</span>
+        <span class="cs-tag">Behavioural Design</span>
       </div>
-
-      <h1 class="case-title">Bridging calendar activity into Salesforce</h1>
-      <p class="case-intro">Activity Editor is a tool that lets Solution Engineers log their Google Calendar events as Org62 (Salesforce) activities directly from Slack or the Solutions Workspace web app — bridging the gap between calendar activity and CRM data capture.</p>
+      <h1 class="case-title">Bridging Calendar Activity into Salesforce</h1>
+      <p class="case-lead">Reduced admin friction for Solution Engineers by bridging Google Calendar and Salesforce across Slack and Web, using GCal colour-matching and A/B-tested confirmation patterns.</p>
 
       <!-- Hero -->
       <div class="case-hero">
-        <div class="case-hero-inner" style="background:linear-gradient(150deg, #c8d4f0 0%, #d8c0e8 40%, #f0d0c0 100%);">
-          <div class="case-hero-card">
-            <div class="cs-stat-row">
-              <div class="cs-stat"><div class="cs-stat-label">Surfaces</div><div class="cs-stat-val" style="font-size:15px;">Slack + Web</div></div>
-              <div class="cs-stat"><div class="cs-stat-label">Years live</div><div class="cs-stat-val" style="font-size:15px;">2022–2024</div></div>
-              <div class="cs-stat"><div class="cs-stat-label">Evolved into</div><div class="cs-stat-val" style="font-size:14px;">Activity Editor 2.0</div></div>
-            </div>
-          </div>
+        <div class="case-hero-inner" style="background:var(--Gradient-Core-3-Color-Gradient, linear-gradient(180deg, #00B3FF 0%, #90D0FE 51.92%, #EAF5FE 100%));">
+          <div class="case-hero-image"><img src="img/projects/ae-hero.png" alt="Activity Editor calendar view for selecting and logging calendar activities"></div>
         </div>
       </div>
 
@@ -1000,91 +908,492 @@
         <div><div class="case-meta-label">Platform</div><div class="case-meta-value">Slack + Rails/Angular</div></div>
       </div>
 
-      <div style="height:40px;border-bottom:1px solid var(--border);margin-bottom:40px;"></div>
+      <div class="case-divider"></div>
 
       <!-- Overview -->
       <div class="case-section" id="overview">
         <div class="case-eyebrow">Overview</div>
-        <div class="case-s-title">Your bridge from GCal to Org62</div>
-        <p class="case-body">Activity Editor is a tool that lets Solution Engineers log their Google Calendar events as Org62 (Salesforce) activities directly from Slack or the Solutions Workspace web app — bridging the gap between calendar activity and CRM data capture. It sits within the Admin &amp; Insights pillar of Solutions Workspace, and today runs as a hybrid Rails + Angular app connecting Google Calendar to Salesforce.</p>
+        <div class="case-s-title">Your Bridge from GCal to Org62</div>
+        <p class="case-body">Activity Editor is a tool that lets Solution Engineers log their Google Calendar events as Org62 (Salesforce) activities directly from Slack or the Solutions Workspace web app, bridging the gap between calendar activity and CRM data capture. It sits within the Admin &amp; Insights pillar of Solutions Workspace, and today runs as a hybrid Rails + Angular app connecting Google Calendar to Salesforce.</p>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- The Problem -->
       <div class="case-section" id="the-problem">
         <div class="case-eyebrow">The Problem</div>
-        <div class="case-s-title">The classic "swivel-chair" problem</div>
-        <p class="case-body">SEs were spending significant admin time manually re-entering calendar events into Salesforce as logged activities — a classic "swivel-chair" problem. Getting SEs to consistently log activities was less a tooling gap and more a behavioural and adoption challenge: the tool had to feel frictionless enough that people would actually use it, and close enough to their existing workflow (Google Calendar) that the transition felt natural.</p>
+        <div class="case-s-title">The Classic "Swivel-Chair" Problem</div>
+        <p class="case-body">SEs were spending significant admin time manually re-entering calendar events into Salesforce as logged activities, a classic "swivel-chair" problem. Getting SEs to consistently log activities was less a tooling gap and more a behavioural and adoption challenge. The tool had to feel frictionless enough that people would actually use it, and close enough to their existing workflow (Google Calendar) that the transition felt natural.</p>
         <div class="case-quote">
-          <div class="case-quote-text">"Designing for behaviour change is hard — a tool only earns adoption once the small details (colour, defaults, timing) remove enough friction that logging activities becomes second nature."</div>
+          <div class="case-quote-text">"Designing for behaviour change is hard. <span class="case-quote-highlight">A tool only earns adoption once the small details (colour, defaults, timing) remove enough friction that logging activities becomes second nature</span>."</div>
         </div>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- My Role -->
       <div class="case-section" id="my-role">
         <div class="case-eyebrow">My Role</div>
-        <div class="case-s-title">Design across two surfaces</div>
-        <ul class="case-list">
-          <li>Design iterations and feature development across both surfaces: the Slack app and the Solutions Workspace web experience.</li>
-          <li>Design QA against the SLDS design system as engineering built to spec.</li>
-          <li>Contributed to the Confirming Activities A/B testing research, evaluating how a confirmation step affected logging accuracy and completion rates.</li>
-        </ul>
+        <div class="case-s-title">Design Across Two Surfaces</div>
+        <div class="case-card-grid">
+          <div class="case-card"><div class="case-card-num">01</div><div class="case-card-title">Cross-surface iteration</div><div class="case-card-body">Design iterations and feature development across both surfaces: the Slack app and the Solutions Workspace web experience.</div></div>
+          <div class="case-card"><div class="case-card-num">02</div><div class="case-card-title">Design QA</div><div class="case-card-body">Design QA against the SLDS design system as engineering built to spec.</div></div>
+          <div class="case-card"><div class="case-card-num">03</div><div class="case-card-title">A/B testing research</div><div class="case-card-body">Contributed to the Confirming Activities A/B testing research, evaluating how a confirmation step affected logging accuracy and completion rates.</div></div>
+        </div>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- Key Design Decisions -->
       <div class="case-section" id="key-design-decisions">
         <div class="case-eyebrow">Key Design Decisions</div>
-        <div class="case-s-title">Removing friction at the point of logging</div>
-        <ul class="case-list">
-          <li>Google Calendar colour labels integrated — pulling in SEs' existing GCal event colours so the tool felt like an extension of their calendar, not a separate system.</li>
-          <li>Pre-set task types — reducing the number of decisions an SE had to make per event to lower friction at the point of logging.</li>
-          <li>Confirming Activities feature — a confirmation UX pattern tested via A/B research before going live.</li>
-          <li>Mixpanel analytics tracking — instrumented to understand real usage patterns and adoption over time.</li>
-        </ul>
+        <div class="case-s-title">Removing Friction at the Point of Logging</div>
+        <div class="case-workflow">
+          <div class="case-workflow-step"><div class="case-workflow-num">01</div><div><div class="case-workflow-title">Google Calendar colour labels</div><div class="case-workflow-body">Pulled in SEs' existing GCal event colours so the tool felt like an extension of their calendar, not a separate system.</div></div></div>
+          <div class="case-workflow-step"><div class="case-workflow-num">02</div><div><div class="case-workflow-title">Pre-set task types</div><div class="case-workflow-body">Reduced the number of decisions an SE had to make per event to lower friction at the point of logging.</div></div></div>
+          <div class="case-workflow-step"><div class="case-workflow-num">03</div><div><div class="case-workflow-title">Confirming Activities feature</div><div class="case-workflow-body">A confirmation UX pattern tested via A/B research before going live.</div></div></div>
+          <div class="case-workflow-step"><div class="case-workflow-num">04</div><div><div class="case-workflow-title">Mixpanel analytics tracking</div><div class="case-workflow-body">Instrumented to understand real usage patterns and adoption over time.</div></div></div>
+        </div>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- Challenges -->
       <div class="case-section" id="challenges">
         <div class="case-eyebrow">Challenges</div>
-        <div class="case-s-title">Consistency across two surfaces</div>
-        <ul class="case-list">
-          <li>Balancing consistency across two different surfaces (Slack app vs. web app) while keeping the experience unified.</li>
-          <li>Security reviews, analytics tracking requirements, and platform migrations added technical complexity alongside the pure design work.</li>
-          <li>Getting the default record type and settings right — a recurring theme in support requests, showing how much default-state design matters for adoption.</li>
-        </ul>
+        <div class="case-s-title">Consistency Across Two Surfaces</div>
+        <div class="case-callout-list">
+          <div class="case-callout"><div class="case-callout-label">Consistency</div><div class="case-callout-body">Balancing consistency across two different surfaces (Slack app vs. web app) while keeping the experience unified.</div></div>
+          <div class="case-callout"><div class="case-callout-label">Technical</div><div class="case-callout-body">Security reviews, analytics tracking requirements, and platform migrations added technical complexity alongside the pure design work.</div></div>
+          <div class="case-callout"><div class="case-callout-label">Defaults</div><div class="case-callout-body">Getting the default record type and settings right was a recurring theme in support requests, showing how much default-state design matters for adoption.</div></div>
+        </div>
       </div>
+
+      <div class="case-divider"></div>
 
       <!-- Outcome & Impact -->
       <div class="case-section" id="outcome-impact">
-        <div class="case-eyebrow">Outcome &amp; Impact</div>
-        <div class="case-s-title">From onboarding staple to Activity Editor 2.0</div>
-        <ul class="case-list">
-          <li>Shipped on both Slack and Solutions Workspace.</li>
-          <li>Became a core part of the SE workflow, featured in SE onboarding programmes.</li>
-          <li>Later evolved into "Activity Editor 2.0," described internally as "your bridge from GCal to Org62," with an established API surface for Google Calendar reads, Salesforce writes, and bulk activity logging.</li>
-          <li>Inspired follow-on ideas from the SE community for an Agentforce-powered version that could recommend activity-to-opportunity links automatically.</li>
-        </ul>
+        <div class="case-eyebrow">Metrics and Measures</div>
+        <div class="case-s-title">From Onboarding Staple to Activity Editor 2.0</div>
+        <div class="case-stat-grid">
+          <div class="case-stat-card"><div class="case-stat-num">2</div><div class="case-stat-label">Surfaces shipped on: Slack and Solutions Workspace</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">Onboarding</div><div class="case-stat-label">Became a core part of the SE workflow, featured in SE onboarding programmes</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">2.0</div><div class="case-stat-label">Evolved into "Activity Editor 2.0" with a full GCal/Salesforce API surface</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">Agentforce</div><div class="case-stat-label">Inspired SE community follow-on ideas for an Agentforce-powered version</div></div>
+        </div>
       </div>
 
-      <!-- What I Learned -->
-      <div class="case-section" id="what-i-learned">
-        <div class="case-eyebrow">What I Learned</div>
-        <div class="case-quote">
-          <div class="case-quote-text">"Designing for behaviour change is hard — the product has to earn adoption. Getting the details right, like pulling in GCal colours and pre-setting task types, was the difference between a tool people ignored and one that became part of their daily routine."</div>
-          <div class="case-quote-author">
-            <div class="quote-avatar"></div>
-            <div><div class="quote-name">Nakeem Carty</div><div class="quote-role">UI/UX Designer</div></div>
+      <div class="case-divider"></div>
+
+      <!-- Designs -->
+      <div class="case-section" id="designs">
+        <div class="case-eyebrow">Designs</div>
+        <div class="case-s-title">A Closer Look at the Screens</div>
+        <div class="case-img"><img src="img/activity-editor/activity-editor-01.png" alt="Activity Editor web app showing a calendar and list of events to select for logging"></div>
+        <p class="case-img-caption">Screen 1 (Select Activities): SEs browse their Google Calendar events in the Solutions Workspace web app and choose which ones to log as Salesforce activities.</p>
+        <div class="case-img"><img src="img/activity-editor/activity-editor-02.png" alt="Log Activities modal for attaching selected events to a Salesforce record"></div>
+        <p class="case-img-caption">Screen 2 (Attach to Record): A guided modal lets SEs attach the selected events to a recently used, viewed, or searched-for Salesforce record before logging.</p>
+        <div class="case-img"><img src="img/activity-editor/activity-editor-03.png" alt="Slack message from the Activity Editor app prompting the user to log or skip calendar events"></div>
+        <p class="case-img-caption">Screen 3 (Slack Prompt): The Slack surface brings the same workflow into an SE's daily habit, surfacing calendar events with one-click Log Activity or Skip actions.</p>
+        <div class="case-img"><img src="img/activity-editor/activity-editor-04.png" alt="Slack activity type dropdown for fine-tuning a logged activity"></div>
+        <p class="case-img-caption">Screen 4 (Fine-Tune Activity Type): SEs can refine the logged activity's type directly in Slack, keeping data structured without leaving the conversation.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Lessons -->
+      <div class="case-section" id="lessons">
+        <div class="case-eyebrow">Final Thoughts</div>
+        <div class="case-s-title">Driving Adoption Through Behavioural Design</div>
+        <div class="case-h3">What I learned</div>
+        <p class="case-body">Designing for behaviour change is hard, because the product has to earn adoption. Getting the details right, like pulling in GCal colours and pre-setting task types, was the difference between a tool people ignored and one that became part of their daily routine.</p>
+        <div class="case-h3">Next steps</div>
+        <p class="case-body">I would explore integrating Agentforce capabilities to automatically recommend activity-to-opportunity links, eliminating manual association steps for Solution Engineers entirely. Additionally, I would leverage Mixpanel telemetry to analyse common drop-off points in multi-event logging and further refine our pre-set task defaults. Finally, I would expand interactive Slack notifications so SEs can review and confirm calendar syncs instantly without switching back to the web dashboard.</p>
+        <div class="case-h3">What I'm most proud of</div>
+        <p class="case-body">I am proudest of turning a tedious administrative chore into a seamless daily habit by aligning with existing mental models, such as mirroring Google Calendar colour labels. Validating our confirmation UX pattern through A/B research proved that solving subtle friction points directly increases data capture accuracy. Ultimately, seeing the tool embedded into official SE onboarding and evolving into Activity Editor 2.0 demonstrated its lasting organisational value.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Explore More -->
+      <div class="case-explore">
+        <div class="case-eyebrow">Explore More</div>
+        <div class="case-explore-viewport">
+          <div class="case-explore-track">
+            <div class="case-explore-card" onclick="openCase('teaming-agreement')"><div class="case-explore-img"><img src="img/projects/ta-hero.png" alt=""></div><p class="case-explore-caption">Teaming Agreement</p></div>
+            <div class="case-explore-card" onclick="openCase('consumption-plan')"><div class="case-explore-img"><img src="img/projects/cp-hero.png" alt=""></div><p class="case-explore-caption">Consumption Plan</p></div>
+            <div class="case-explore-card" onclick="openCase('quota-attainment-planning')"><div class="case-explore-img"><img src="img/projects/qap-hero.png" alt=""></div><p class="case-explore-caption">Quota Attainment Planning</p></div>
+            <div class="case-explore-card" onclick="openCase('digital-drt-cqi-tool')"><div class="case-explore-img"><img src="img/projects/drt-hero.png" alt=""></div><p class="case-explore-caption">CQI Tool</p></div>
+            <div class="case-explore-card" onclick="openCase('teaming-agreement')"><div class="case-explore-img"><img src="img/projects/ta-hero.png" alt=""></div><p class="case-explore-caption">Teaming Agreement</p></div>
+            <div class="case-explore-card" onclick="openCase('consumption-plan')"><div class="case-explore-img"><img src="img/projects/cp-hero.png" alt=""></div><p class="case-explore-caption">Consumption Plan</p></div>
+            <div class="case-explore-card" onclick="openCase('quota-attainment-planning')"><div class="case-explore-img"><img src="img/projects/qap-hero.png" alt=""></div><p class="case-explore-caption">Quota Attainment Planning</p></div>
+            <div class="case-explore-card" onclick="openCase('digital-drt-cqi-tool')"><div class="case-explore-img"><img src="img/projects/drt-hero.png" alt=""></div><p class="case-explore-caption">CQI Tool</p></div>
           </div>
         </div>
       </div>
 
-      <!-- Reference Material -->
-      <div class="case-section" id="reference-material">
-        <div class="case-eyebrow">Reference Material</div>
-        <ul class="case-list small">
-          <li>Meet Nakeem — Team Member Profile canvas — original source summary of this project.</li>
-          <li>Activity Editor Repository Exploration Summary — technical architecture write-up.</li>
-          <li>Activity Editor Data Flow — how calendar + user input becomes a Salesforce Event.</li>
-        </ul>
+      </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <div class="footer-brand-top"><div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div><h3 class="footer-name">Nakeem Carty</h3></div>
+          <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
+          <span class="footer-credit">© 2026 by Nakeem Carty</span>
+        </div>
+        <div><div class="footer-col-title">Links</div><ul class="footer-links"><li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li><li><a href="#" onclick="switchTabByName('about');return false;">About</a></li><li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li></ul></div>
+        <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li></ul><div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- ══════════ CASE STUDY: ACCOUNT PLANNING AGENT EXPERIENCE ══════════ -->
+  <div class="panel" id="tab-case-quota-attainment-planning">
+    <div class="case-study active">
+      <div class="case-layout">
+      <aside class="case-sidebar">
+        <button class="case-back-btn" onclick="switchTabByName('projects')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          All Projects
+        </button>
+        <nav class="case-toc">
+          <a href="#overview" class="case-toc-link">Overview</a>
+          <a href="#the-problem" class="case-toc-link">The Problem</a>
+          <a href="#my-role" class="case-toc-link">My Role</a>
+          <a href="#key-design-decisions" class="case-toc-link">Key Design Decisions</a>
+          <a href="#challenges" class="case-toc-link">Challenges</a>
+          <a href="#outcome-impact" class="case-toc-link">Metrics and Measures</a>
+          <a href="#designs" class="case-toc-link">Designs</a>
+          <a href="#lessons" class="case-toc-link">Final Thoughts</a>
+        </nav>
+      </aside>
+      <div class="case-content">
+
+      <div class="cs-tags">
+        <span class="cs-tag">Agentic AI</span>
+        <span class="cs-tag">Slack App UX</span>
+        <span class="cs-tag">Org62 / SLDS</span>
+        <span class="cs-tag">Design Strategy</span>
+      </div>
+      <h1 class="case-title">From Manual Authoring to an Agent-Initiated Flow</h1>
+      <p class="case-lead">Prototyped a seamless Slack-to-Org62 agentic workflow that uses Gemini-powered research to turn manual, hand-authored account planning into an automated AI experience ahead of CKO planning cycles.</p>
+
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-inner" style="background:var(--Gradient-Core-3-Color-Gradient, linear-gradient(180deg, #00B3FF 0%, #90D0FE 51.92%, #EAF5FE 100%));">
+          <div class="case-hero-image"><img src="img/projects/qap-hero.png" alt="Slack message from the Sales Agent confirming a completed Account Plan for an account, with a button handing off into Org62"></div>
+        </div>
+      </div>
+
+      <!-- Meta -->
+      <div class="case-meta-row">
+        <div><div class="case-meta-label">Role</div><div class="case-meta-value">UI/UX Designer</div></div>
+        <div><div class="case-meta-label">Timeline</div><div class="case-meta-value">Nov 2025 - Feb 2026</div></div>
+        <div><div class="case-meta-label">Team</div><div class="case-meta-value">2 UX Designers, 1 Programme Manager and 1 Product Owner</div></div>
+        <div><div class="case-meta-label">Tools</div><div class="case-meta-value">Figma, Slack Block Kit, Org62</div></div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Overview -->
+      <div class="case-section" id="overview">
+        <div class="case-eyebrow">Overview</div>
+        <div class="case-s-title">A Seller @mention Away From a Completed Plan</div>
+        <p class="case-body">Account Plan creation in Org62 was fully manual: an AE had to navigate to the account page, click "Start Plan," and hand-author the Seller POV strategy tab from scratch. Working with Keith Mistler and Anna Krevets, I designed a high-fidelity mockup for an agent-initiated alternative: a seller @mentions the Sales Agent directly in Slack, and the agent hands them off into Org62 with the plan already underway.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- The Problem -->
+      <div class="case-section" id="the-problem">
+        <div class="case-eyebrow">The Problem</div>
+        <div class="case-s-title">Manual Authoring, Limited Data Coverage</div>
+        <p class="case-body">Two problems compounded each other. First, the Seller POV strategy tab required manual, from-scratch authoring, with no scaffolding, reuse, or assist. Second, the account data populating the first tab came from a third-party source covering only around 20,000 accounts, leaving most of the book of business without a meaningful starting point. Sellers were left to build strategy manually on incomplete data.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- My Role -->
+      <div class="case-section" id="my-role">
+        <div class="case-eyebrow">My Role</div>
+        <div class="case-s-title">Design, Flow Mapping, and Stakeholder Buy-In</div>
+        <div class="case-card-grid">
+          <div class="case-card"><div class="case-card-num">01</div><div class="case-card-title">Stakeholder alignment</div><div class="case-card-body">Partnered with Keith Mistler and Anna Krevets to scope a mockup that could win buy-in across Operating Units and Centres of Excellence ahead of Q4.</div></div>
+          <div class="case-card"><div class="case-card-num">02</div><div class="case-card-title">End-to-end flow mapping</div><div class="case-card-body">Mapped the end-to-end flow from a Slack @mention through to a completed Org62 Account Plan.</div></div>
+          <div class="case-card"><div class="case-card-num">03</div><div class="case-card-title">Block Kit response design</div><div class="case-card-body">Designed the Block Kit response pattern that hands the seller from Slack into Org62.</div></div>
+          <div class="case-card"><div class="case-card-num">04</div><div class="case-card-title">Scoped for Q4 delivery</div><div class="case-card-body">Scoped the work to fit inside the existing Q4 UI, deferring a full visual redesign to a later phase.</div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Key Design Decisions -->
+      <div class="case-section" id="key-design-decisions">
+        <div class="case-eyebrow">Key Design Decisions</div>
+        <div class="case-s-title">Simplify the Ask, Broaden the Data, Keep a Human Check</div>
+        <div class="case-workflow">
+          <div class="case-workflow-step"><div class="case-workflow-num">01</div><div><div class="case-workflow-title">Keep the existing Q4 UI intact</div><div class="case-workflow-body">Treated a visual redesign as a separate H1 opportunity rather than bundling scope into an already tight Q4 delivery.</div></div></div>
+          <div class="case-workflow-step"><div class="case-workflow-num">02</div><div><div class="case-workflow-title">A plain-language trigger, not a form</div><div class="case-workflow-body">Designed the seller's request as a conversational trigger ("create my account plan") instead of a form or multi-step setup.</div></div></div>
+          <div class="case-workflow-step"><div class="case-workflow-num">03</div><div><div class="case-workflow-title">Broaden the data beyond one source</div><div class="case-workflow-body">Pulled in Gemini and additional sources to close the gap left by the third-party dataset's ~20,000-account limit.</div></div></div>
+          <div class="case-workflow-step"><div class="case-workflow-num">04</div><div><div class="case-workflow-title">Keep a human check before it saves</div><div class="case-workflow-body">Added a validation and confirmation step before the AI-generated strategy saves, so the AE stays in control of what publishes to their Seller POV tab.</div></div></div>
+          <div class="case-workflow-step"><div class="case-workflow-num">05</div><div><div class="case-workflow-title">Consolidate five sections into two</div><div class="case-workflow-body">Restructured the Seller POV tab from five fragmented, product-specific sections down to two, Growth and ACV, and Retention and Attrition, shifting the plan from a product checklist to a holistic account strategy.</div></div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Challenges -->
+      <div class="case-section" id="challenges">
+        <div class="case-eyebrow">Challenges</div>
+        <div class="case-s-title">Two Audiences, One Mockup</div>
+        <div class="case-callout-list">
+          <div class="case-callout"><div class="case-callout-label">Audience</div><div class="case-callout-body">Designing for two very different audiences at once: AEs who would use the flow daily, and business leaders across Fast Start and CKO programming who needed to be convinced by the mockup itself.</div></div>
+          <div class="case-callout"><div class="case-callout-label">Scope</div><div class="case-callout-body">Simplifying five Seller POV sections down to two without losing signal sellers actually relied on.</div></div>
+          <div class="case-callout"><div class="case-callout-label">Constraint</div><div class="case-callout-body">Working within a hard constraint, no changes to the existing Q4 UI, while still making the AI-driven improvements feel like a meaningful step forward.</div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Outcome & Impact -->
+      <div class="case-section" id="outcome-impact">
+        <div class="case-eyebrow">Metrics and Measures</div>
+        <div class="case-s-title">What Success Looked Like</div>
+        <div class="case-stat-grid">
+          <div class="case-stat-card"><div class="case-stat-num">0</div><div class="case-stat-label">Changes required to the existing Q4 UI — the agentic flow layered on top without a visual redesign</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">5→2</div><div class="case-stat-label">Seller POV sections consolidated, from five product-specific tabs into two holistic views (Growth &amp; ACV, Retention &amp; Attrition)</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">20k+</div><div class="case-stat-label">Third-party account coverage broadened with Gemini and additional sources, beyond the original ~20,000-account limit</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">Slack→Org62</div><div class="case-stat-label">Seamless handoff from an agent-initiated Slack request to a completed Account Plan draft, with no dead ends</div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Designs -->
+      <div class="case-section" id="designs">
+        <div class="case-eyebrow">Designs</div>
+        <div class="case-s-title">A Closer Look at the Screens</div>
+        <div class="case-img"><img src="img/account-planning/account-planning-02.png" alt="Seller typing an @mention to the Sales Agent asking it to create a new Account Plan"></div>
+        <p class="case-img-caption">Screen 1 (The @mention): The seller asks the Sales Agent, right in Slack, to create a new Account Plan for the account, no separate tool required.</p>
+        <div class="case-img"><img src="img/account-planning/account-planning-03.png" alt="Sales Agent responding in Slack that it is figuring out next steps"></div>
+        <p class="case-img-caption">Screen 2 (Agent at Work): The Sales Agent picks up the request and works in the background while the seller keeps going about their day.</p>
+        <div class="case-img"><img src="img/account-planning/account-planning-04.png" alt="Sales Agent's pinned Slack message announcing the finished Account Plan with a button into Org62"></div>
+        <p class="case-img-caption">Screen 3 (The Handoff): The agent pins its finished summary to the channel with a one-click button straight into the full plan in Org62.</p>
+        <div class="case-img"><img src="img/account-planning/account-planning-05.png" alt="Org62 Company Plan screen showing the AI-generated Growth and ACV point of view for the account"></div>
+        <p class="case-img-caption">Screen 4 (The Plan): The resulting Org62 Account Plan, with the Sellers POV tab already populated with an AI-generated Growth &amp; ACV strategy.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Lessons -->
+      <div class="case-section" id="lessons">
+        <div class="case-eyebrow">Final Thoughts</div>
+        <div class="case-s-title">What I Learned</div>
+        <div class="case-h3">What I learned</div>
+        <p class="case-body">Presenting a hard constraint, no changes to the existing Q4 UI, as a design decision rather than a limitation kept the pitch focused on the real innovation: the agent-initiated flow and AI-assisted strategy, instead of getting derailed into a visual redesign conversation too early.</p>
+        <div class="case-h3">Next steps</div>
+        <p class="case-body">Carry the validated flow into the H1 visual redesign opportunity, and explore extending the agent-initiated pattern to other Org62 planning surfaces beyond Account Plans.</p>
+        <div class="case-h3">What I'm most proud of</div>
+        <p class="case-body">Landing a design that satisfied two very different stakeholder groups, AE daily users and senior business leaders, from a single low-fidelity mockup, without needing to touch the existing UI.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Explore More -->
+      <div class="case-explore">
+        <div class="case-eyebrow">Explore More</div>
+        <div class="case-explore-viewport">
+          <div class="case-explore-track">
+            <div class="case-explore-card" onclick="openCase('teaming-agreement')"><div class="case-explore-img"><img src="img/projects/ta-hero.png" alt=""></div><p class="case-explore-caption">Teaming Agreement</p></div>
+            <div class="case-explore-card" onclick="openCase('consumption-plan')"><div class="case-explore-img"><img src="img/projects/cp-hero.png" alt=""></div><p class="case-explore-caption">Consumption Plan</p></div>
+            <div class="case-explore-card" onclick="openCase('activity-editor')"><div class="case-explore-img"><img src="img/projects/ae-hero.png" alt=""></div><p class="case-explore-caption">Activity Editor</p></div>
+            <div class="case-explore-card" onclick="openCase('digital-drt-cqi-tool')"><div class="case-explore-img"><img src="img/projects/drt-hero.png" alt=""></div><p class="case-explore-caption">CQI Tool</p></div>
+            <div class="case-explore-card" onclick="openCase('teaming-agreement')"><div class="case-explore-img"><img src="img/projects/ta-hero.png" alt=""></div><p class="case-explore-caption">Teaming Agreement</p></div>
+            <div class="case-explore-card" onclick="openCase('consumption-plan')"><div class="case-explore-img"><img src="img/projects/cp-hero.png" alt=""></div><p class="case-explore-caption">Consumption Plan</p></div>
+            <div class="case-explore-card" onclick="openCase('activity-editor')"><div class="case-explore-img"><img src="img/projects/ae-hero.png" alt=""></div><p class="case-explore-caption">Activity Editor</p></div>
+            <div class="case-explore-card" onclick="openCase('digital-drt-cqi-tool')"><div class="case-explore-img"><img src="img/projects/drt-hero.png" alt=""></div><p class="case-explore-caption">CQI Tool</p></div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <div class="footer-brand-top"><div class="footer-avatar has-photo" aria-hidden="true"><img src="img/profile-picture.jpeg" alt=""></div><h3 class="footer-name">Nakeem Carty</h3></div>
+          <p class="footer-bio">UX designer focused on clear systems, grounded research, and thoughtful product details.</p>
+          <span class="footer-credit">© 2026 by Nakeem Carty</span>
+        </div>
+        <div><div class="footer-col-title">Links</div><ul class="footer-links"><li><a href="#" onclick="switchTabByName('projects');return false;">Work</a></li><li><a href="#" onclick="switchTabByName('about');return false;">About</a></li><li><a href="#" onclick="switchTabByName('resume');return false;">Resume</a></li></ul></div>
+        <div><div class="footer-col-title">Contact</div><ul class="footer-links"><li><a class="resume-download" href="files/Nakeem-Carty-CV.pdf" target="_blank" rel="noopener noreferrer"><span class="resume-download-text">Download Resume</span><svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></li></ul><div class="footer-social"><a class="soc-icon" href="mailto:nakeem.carty@gmail.com" title="Email" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a><a class="soc-icon" href="https://www.linkedin.com/in/cartynakeem/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div>
+      </footer>
+
+    </div>
+  </div>
+
+  <div class="panel" id="tab-case-digital-drt-cqi-tool">
+    <div class="case-study active">
+      <div class="case-layout">
+      <aside class="case-sidebar">
+        <button class="case-back-btn" onclick="switchTabByName('projects')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          All Projects
+        </button>
+        <nav class="case-toc">
+          <a href="#overview" class="case-toc-link">Overview</a>
+          <a href="#the-problem" class="case-toc-link">The Problem</a>
+          <a href="#my-role" class="case-toc-link">My Role</a>
+          <a href="#key-design-decisions" class="case-toc-link">Key Design Decisions</a>
+          <a href="#challenges" class="case-toc-link">Challenges</a>
+          <a href="#outcome-impact" class="case-toc-link">Metrics and Measures</a>
+          <a href="#designs" class="case-toc-link">Designs</a>
+          <a href="#lessons" class="case-toc-link">Final Thoughts</a>
+        </nav>
+      </aside>
+      <div class="case-content">
+
+      <div class="cs-tags">
+        <span class="cs-tag">Deal Desk</span>
+        <span class="cs-tag">Pre-Quoting</span>
+        <span class="cs-tag">Figma Prototype</span>
+      </div>
+      <h1 class="case-title">CQI (Commercial Quality Index) Tool</h1>
+      <p class="case-lead">The pre-quoting process was manual and fragmented. I designed the CQI layout with in-line guidance banners, FMV Capture Ratio and Commercial Terms Score modules with error/warning states, and a Scenario Editing flow, ordering the page as guidance, then score, then detail.</p>
+
+      <!-- Hero -->
+      <div class="case-hero">
+        <div class="case-hero-inner" style="background:var(--Gradient-Core-3-Color-Gradient, linear-gradient(180deg, #00B3FF 0%, #90D0FE 51.92%, #EAF5FE 100%));">
+          <div class="case-hero-image"><img src="img/projects/drt-hero.png" alt="CQI Tool showing the Commercial Quality Index score alongside the guidance banner and supporting detail"></div>
+        </div>
+      </div>
+
+      <!-- Meta -->
+      <div class="case-meta-row">
+        <div><div class="case-meta-label">Role</div><div class="case-meta-value">UI/UX Designer</div></div>
+        <div><div class="case-meta-label">Timeline</div><div class="case-meta-value">2024 - 2025</div></div>
+        <div><div class="case-meta-label">Team</div><div class="case-meta-value">Deal Desk reps, Account Executives, and cross-functional stakeholders</div></div>
+        <div><div class="case-meta-label">Tools</div><div class="case-meta-value">Figma Prototype</div></div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Overview -->
+      <div class="case-section" id="overview">
+        <div class="case-eyebrow">Overview</div>
+        <div class="case-s-title">One Scored, Guided Experience Instead of a Fragmented Manual Process</div>
+        <p class="case-body">The pre-quoting process was manual and fragmented. I designed the CQI (Commercial Quality Index) layout to bring guidance, scoring, and detail into one ordered flow for Account Executives (AEs) and Deal Desk reps, digitising Salesforce's deal structuring process.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- The Problem -->
+      <div class="case-section" id="the-problem">
+        <div class="case-eyebrow">The Problem</div>
+        <div class="case-s-title">A Manual, Inconsistent Pre-Quoting Process</div>
+        <p class="case-body">The pre-quoting process for AEs and Deal Desk reps was highly manual, prone to inaccuracies, and inconsistent. The goal was to digitise deal structuring with holistic deal scoring, auto-generated customer footprints, and integrated pricing guidance based on fair market value (FMV), replacing separate, disconnected evaluations with one unified view.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- My Role -->
+      <div class="case-section" id="my-role">
+        <div class="case-eyebrow">My Role</div>
+        <div class="case-s-title">Designing the Scoring Experience End to End</div>
+        <div class="case-card-grid">
+          <div class="case-card"><div class="case-card-num">01</div><div class="case-card-title">Pre Quote Summary screen</div><div class="case-card-body">Designed the Pre Quote Summary screen, including the CQI layout, in-line guidance banners, and the FMV Capture Ratio and Commercial Terms Score modules.</div></div>
+          <div class="case-card"><div class="case-card-num">02</div><div class="case-card-title">Error and warning states</div><div class="case-card-body">Designed error and warning states that turned a module's outline red with inline correction instructions when a deal needed attention.</div></div>
+          <div class="case-card"><div class="case-card-num">03</div><div class="case-card-title">Scenario Editing flow</div><div class="case-card-body">Designed the Scenario Editing flow for AEs and Deal Desk, prototyped in Figma as DRT Design Version 2.</div></div>
+          <div class="case-card"><div class="case-card-num">04</div><div class="case-card-title">Automated data integration</div><div class="case-card-body">Designed automated account footprint upload and FMV data integration to remove manual pricing look-ups.</div></div>
+          <div class="case-card"><div class="case-card-num">05</div><div class="case-card-title">Cross-functional collaboration</div><div class="case-card-body">Collaborated cross-functionally with Deal Desk and AEs throughout.</div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Key Design Decisions -->
+      <div class="case-section" id="key-design-decisions">
+        <div class="case-eyebrow">Key Design Decisions</div>
+        <div class="case-s-title">A Clear Reading Order: Guidance, Score, Detail</div>
+        <div class="case-workflow">
+          <div class="case-workflow-step"><div class="case-workflow-num">01</div><div><div class="case-workflow-title">Guidance above the score</div><div class="case-workflow-body">Placed the guidance banner above the CQI score, with the FMV Capture Ratio and Commercial Terms Score modules below it, establishing a clear reading order from what's wrong, to the score, to the supporting detail.</div></div></div>
+          <div class="case-workflow-step"><div class="case-workflow-num">02</div><div><div class="case-workflow-title">Red outline, inline instructions</div><div class="case-workflow-body">Used a red outline plus inline instructions pattern for error and warning states, so users could immediately see and fix the issue without leaving the screen.</div></div></div>
+          <div class="case-workflow-step"><div class="case-workflow-num">03</div><div><div class="case-workflow-title">Automated footprint and FMV integration</div><div class="case-workflow-body">Designed the automated account footprint upload and FMV data integration to pull pricing guidance directly into the tool, removing manual data look-ups.</div></div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Challenges -->
+      <div class="case-section" id="challenges">
+        <div class="case-eyebrow">Challenges</div>
+        <div class="case-s-title">Rigour Without Slowing Sellers Down</div>
+        <div class="case-callout-list">
+          <div class="case-callout"><div class="case-callout-label">Iteration speed</div><div class="case-callout-body">Feedback highlighted patience and checking back to confirm designs addressed the actual request, since deal scoring logic evolved as the pilot progressed.</div></div>
+          <div class="case-callout"><div class="case-callout-label">Balance</div><div class="case-callout-body">Balancing a tool that needed to feel rigorous, with holistic deal scoring, against one that didn't slow AEs down mid-deal.</div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Outcome & Impact -->
+      <div class="case-section" id="outcome-impact">
+        <div class="case-eyebrow">Metrics and Measures</div>
+        <div class="case-s-title">Pilot Reach and Recognition</div>
+        <div class="case-stat-grid">
+          <div class="case-stat-card"><div class="case-stat-num">EMEA</div><div class="case-stat-label">Pilot region, as part of the Digital DRT/CQI leadership update</div></div>
+          <div class="case-stat-card"><div class="case-stat-num">Recognised</div><div class="case-stat-label">Called out in performance feedback as professional, thorough, and creative, with strong marks for stakeholder focus and collaboration</div></div>
+        </div>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Designs -->
+      <div class="case-section" id="designs">
+        <div class="case-eyebrow">Designs</div>
+        <div class="case-s-title">A Closer Look at the Screens</div>
+        <div class="case-img"><img src="img/cqi-tool/cqi-tool-01.png" alt="Get Started step of the CQI tool showing the deal information intake form"></div>
+        <p class="case-img-caption">Get Started: AEs enter core deal and account information, kicking off the guided, step-by-step pre-quoting flow.</p>
+        <div class="case-img"><img src="img/cqi-tool/cqi-tool-02.png" alt="Account Footprint step showing an uploaded contract line item table with SKU, units, price, and current AOV"></div>
+        <p class="case-img-caption">Account Footprint: uploaded contract data populates automatically, removing the need to manually look up a customer's existing footprint.</p>
+        <div class="case-img"><img src="img/cqi-tool/cqi-tool-03.png" alt="Deal Terms step showing the effective TCV and expected commercial terms tables"></div>
+        <p class="case-img-caption">Deal Terms: effective TCV and expected commercial terms are laid out side by side, so Deal Desk can evaluate pricing and terms together.</p>
+        <div class="case-img"><img src="img/cqi-tool/cqi-tool-04.png" alt="Pre-Quote Statement step confirming the pre-quote is ready with downloadable deal review and commercial terms documents"></div>
+        <p class="case-img-caption">Pre-Quote Statement: the final step packages the deal review and commercial terms overview into documents ready to attach to the DSR in Org62.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Lessons -->
+      <div class="case-section" id="lessons">
+        <div class="case-eyebrow">Final Thoughts</div>
+        <div class="case-s-title">What I Learned</div>
+        <div class="case-h3">What I learned</div>
+        <p class="case-body">Designing for a scoring tool means the interface has to earn trust. Clear error states and a logical reading order, guidance to score to detail, matter as much as the score itself.</p>
+        <div class="case-h3">Next steps</div>
+        <p class="case-body">Use learnings from the EMEA pilot to help define business requirements for pre-quoting functionality in OrgSF, the next-generation Lead to Cash Salesforce instance.</p>
+        <div class="case-h3">What I'm most proud of</div>
+        <p class="case-body">Turning a rigorous, holistic scoring model into an interface that AEs could trust and act on quickly, without it feeling like it was slowing them down mid-deal.</p>
+      </div>
+
+      <div class="case-divider"></div>
+
+      <!-- Explore More -->
+      <div class="case-explore">
+        <div class="case-eyebrow">Explore More</div>
+        <div class="case-explore-viewport">
+          <div class="case-explore-track">
+            <div class="case-explore-card" onclick="openCase('teaming-agreement')"><div class="case-explore-img"><img src="img/projects/ta-hero.png" alt=""></div><p class="case-explore-caption">Teaming Agreement</p></div>
+            <div class="case-explore-card" onclick="openCase('consumption-plan')"><div class="case-explore-img"><img src="img/projects/cp-hero.png" alt=""></div><p class="case-explore-caption">Consumption Plan</p></div>
+            <div class="case-explore-card" onclick="openCase('activity-editor')"><div class="case-explore-img"><img src="img/projects/ae-hero.png" alt=""></div><p class="case-explore-caption">Activity Editor</p></div>
+            <div class="case-explore-card" onclick="openCase('quota-attainment-planning')"><div class="case-explore-img"><img src="img/projects/qap-hero.png" alt=""></div><p class="case-explore-caption">Quota Attainment Planning</p></div>
+            <div class="case-explore-card" onclick="openCase('teaming-agreement')"><div class="case-explore-img"><img src="img/projects/ta-hero.png" alt=""></div><p class="case-explore-caption">Teaming Agreement</p></div>
+            <div class="case-explore-card" onclick="openCase('consumption-plan')"><div class="case-explore-img"><img src="img/projects/cp-hero.png" alt=""></div><p class="case-explore-caption">Consumption Plan</p></div>
+            <div class="case-explore-card" onclick="openCase('activity-editor')"><div class="case-explore-img"><img src="img/projects/ae-hero.png" alt=""></div><p class="case-explore-caption">Activity Editor</p></div>
+            <div class="case-explore-card" onclick="openCase('quota-attainment-planning')"><div class="case-explore-img"><img src="img/projects/qap-hero.png" alt=""></div><p class="case-explore-caption">Quota Attainment Planning</p></div>
+          </div>
+        </div>
       </div>
 
       </div>
